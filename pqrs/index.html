@@ -21,6 +21,8 @@
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#que-es" class="nav-link">¿Qué es?</a>
+        <a href="#flujo" class="nav-link">Flujo</a>
+        <a href="#conceptual" class="nav-link">Ecosistema</a>
         <a href="#canales" class="nav-link">Canales</a>
         <a href="#ia" class="nav-link">IA</a>
         <a href="#caracteristicas" class="nav-link">Características</a>
@@ -53,6 +55,7 @@
         <div class="hero-cta">
           <a href="#contacto" class="btn btn-primary btn-lg">Agenda una demo gratuita</a>
           <a href="#que-es" class="btn btn-outline btn-lg">Conoce más <span class="arrow-down">↓</span></a>
+          <a href="brochure_zammad_poliedro_clientes.pdf" download class="btn btn-brochure btn-lg">Descargar Brochure</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
@@ -139,6 +142,207 @@
           <h3 class="card-title">Responde</h3>
           <p class="card-text">Cumple con los tiempos legales de PQRS. Monitorea SLAs, genera reportes y demuestra transparencia con trazabilidad completa de cada caso.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA DE FLUJO PQRS -->
+  <section class="section section-alt" id="flujo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Así fluye un <span class="text-gradient">PQRS en Zammad</span></h2>
+        <p class="section-subtitle">Desde que el ciudadano hace su solicitud hasta que recibe una respuesta, cada paso está automatizado, trazado y optimizado.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 320" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#0072a1"/>
+            </marker>
+            <filter id="shadowBox"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+            <linearGradient id="gradStep" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#51bbe3"/>
+            </linearGradient>
+            <linearGradient id="gradIA" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#183146"/><stop offset="100%" stop-color="#0072a1"/>
+            </linearGradient>
+          </defs>
+
+          <!-- PASO 1: Canales de Entrada -->
+          <rect x="10" y="115" width="190" height="90" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowBox)"/>
+          <text x="105" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1e293b">Canales de Entrada</text>
+          <text x="105" y="168" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Email · Web · WhatsApp</text>
+          <text x="105" y="185" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Chat · Teléfono · Redes</text>
+          <circle cx="30" cy="135" r="12" fill="url(#gradStep)"/>
+          <text x="30" y="139" text-anchor="middle" font-size="12" fill="white">1</text>
+
+          <!-- Flecha 1→2 -->
+          <line x1="200" y1="160" x2="245" y2="160" stroke="#0072a1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+          <!-- PASO 2: Recepción y Registro -->
+          <rect x="250" y="115" width="190" height="90" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowBox)"/>
+          <text x="345" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1e293b">Recepción y Registro</text>
+          <text x="345" y="168" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Radicación automática</text>
+          <text x="345" y="185" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Ticket único generado</text>
+          <circle cx="270" cy="135" r="12" fill="url(#gradStep)"/>
+          <text x="270" y="139" text-anchor="middle" font-size="12" fill="white">2</text>
+
+          <!-- Flecha 2→3 -->
+          <line x1="440" y1="160" x2="485" y2="160" stroke="#0072a1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+          <!-- PASO 3: IA - Clasificación -->
+          <rect x="490" y="105" width="210" height="110" rx="12" fill="white" stroke="#51bbe3" stroke-width="2" filter="url(#shadowBox)"/>
+          <rect x="490" y="105" width="210" height="26" rx="12" fill="url(#gradIA)"/>
+          <rect x="490" y="119" width="210" height="12" fill="url(#gradIA)"/>
+          <text x="595" y="123" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="white">🤖 IA Inteligente</text>
+          <text x="595" y="151" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1e293b">Clasificación Automática</text>
+          <text x="595" y="171" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Tipo · Prioridad · Área</text>
+          <text x="595" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Tags · Sentimiento · SLA</text>
+          <text x="595" y="205" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#51bbe3">Detección de duplicados</text>
+
+          <!-- Flecha 3→4 -->
+          <line x1="700" y1="160" x2="745" y2="160" stroke="#0072a1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+          <!-- PASO 4: Asignación y Gestión -->
+          <rect x="750" y="115" width="190" height="90" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowBox)"/>
+          <text x="845" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1e293b">Asignación y Gestión</text>
+          <text x="845" y="168" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Agente responsable</text>
+          <text x="845" y="185" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Flujo de trabajo</text>
+          <circle cx="770" cy="135" r="12" fill="url(#gradStep)"/>
+          <text x="770" y="139" text-anchor="middle" font-size="12" fill="white">4</text>
+
+          <!-- Flecha 4→5 -->
+          <line x1="940" y1="160" x2="985" y2="160" stroke="#0072a1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+          <!-- PASO 5: Respuesta y Cierre -->
+          <rect x="990" y="115" width="100" height="90" rx="12" fill="url(#gradStep)" filter="url(#shadowBox)"/>
+          <text x="1040" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="white">Respuesta</text>
+          <text x="1040" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.85)">y Cierre</text>
+          <circle cx="1010" cy="135" r="12" fill="rgba(255,255,255,0.25)"/>
+          <text x="1010" y="139" text-anchor="middle" font-size="12" fill="white">5</text>
+
+          <!-- Línea de trazabilidad inferior -->
+          <rect x="10" y="255" width="1080" height="45" rx="10" fill="rgba(0,114,161,0.06)" stroke="#abd1e6" stroke-dasharray="6,3"/>
+          <text x="550" y="275" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#0072a1">🔍 Trazabilidad 360°</text>
+          <text x="550" y="293" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Cada acción queda registrada: quién, qué y cuándo. Auditoría lista para entes de control.</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA CONCEPTUAL PQRS -->
+  <section class="section" id="conceptual">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ecosistema <span class="text-gradient">PQRS</span></h2>
+        <p class="section-subtitle">Una visión integral de cómo Zammad orquesta personas, tecnología y procesos para transformar la gestión de PQRS.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 520" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <filter id="shadowNode"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.12"/></filter>
+            <filter id="shadowCenter"><feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.25"/></filter>
+            <linearGradient id="gradCenter" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#2d97bf"/>
+            </linearGradient>
+            <linearGradient id="gradPetition" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#51bbe3"/><stop offset="100%" stop-color="#2d97bf"/>
+            </linearGradient>
+            <linearGradient id="gradComplaint" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+            <linearGradient id="gradClaim" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f87171"/><stop offset="100%" stop-color="#dc2626"/>
+            </linearGradient>
+            <linearGradient id="gradSuggest" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4ade80"/><stop offset="100%" stop-color="#16a34a"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Nodo Central: Zammad -->
+          <circle cx="550" cy="260" r="72" fill="url(#gradCenter)" filter="url(#shadowCenter)"/>
+          <text x="550" y="252" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="white">Zammad</text>
+          <text x="550" y="274" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="rgba(255,255,255,0.85)">Plataforma</text>
+
+          <!-- 4 tipos de PQRS alrededor -->
+          <!-- Petición (top-left) -->
+          <rect x="100" y="55" width="170" height="85" rx="14" fill="white" stroke="#51bbe3" stroke-width="2" filter="url(#shadowNode)"/>
+          <rect x="100" y="55" width="170" height="28" rx="14" fill="url(#gradPetition)"/>
+          <rect x="100" y="69" width="170" height="14" fill="url(#gradPetition)"/>
+          <text x="185" y="75" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📝 Petición</text>
+          <text x="185" y="102" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Solicitud de información</text>
+          <text x="185" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">o servicio por parte</text>
+          <text x="185" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">del ciudadano</text>
+          <line x1="220" y1="110" x2="490" y2="230" stroke="#51bbe3" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Queja (top-right) -->
+          <rect x="830" y="55" width="170" height="85" rx="14" fill="white" stroke="#fbbf24" stroke-width="2" filter="url(#shadowNode)"/>
+          <rect x="830" y="55" width="170" height="28" rx="14" fill="url(#gradComplaint)"/>
+          <rect x="830" y="69" width="170" height="14" fill="url(#gradComplaint)"/>
+          <text x="915" y="75" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">⚠️ Queja</text>
+          <text x="915" y="102" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Manifestación de</text>
+          <text x="915" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">inconformidad sobre</text>
+          <text x="915" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">la atención</text>
+          <line x1="880" y1="110" x2="610" y2="230" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Reclamo (bottom-left) -->
+          <rect x="100" y="380" width="170" height="85" rx="14" fill="white" stroke="#f87171" stroke-width="2" filter="url(#shadowNode)"/>
+          <rect x="100" y="380" width="170" height="28" rx="14" fill="url(#gradClaim)"/>
+          <rect x="100" y="394" width="170" height="14" fill="url(#gradClaim)"/>
+          <text x="185" y="400" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">🔴 Reclamo</text>
+          <text x="185" y="427" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Exigencia de un</text>
+          <text x="185" y="445" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">derecho o solución</text>
+          <text x="185" y="460" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">ante incumplimiento</text>
+          <line x1="220" y1="410" x2="490" y2="290" stroke="#f87171" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Sugerencia (bottom-right) -->
+          <rect x="830" y="380" width="170" height="85" rx="14" fill="white" stroke="#4ade80" stroke-width="2" filter="url(#shadowNode)"/>
+          <rect x="830" y="380" width="170" height="28" rx="14" fill="url(#gradSuggest)"/>
+          <rect x="830" y="394" width="170" height="14" fill="url(#gradSuggest)"/>
+          <text x="915" y="400" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">💡 Sugerencia</text>
+          <text x="915" y="427" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Propuesta para</text>
+          <text x="915" y="445" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">mejorar procesos</text>
+          <text x="915" y="460" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">o servicios</text>
+          <line x1="880" y1="410" x2="610" y2="290" stroke="#4ade80" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Capa exterior: Capacidades -->
+          <!-- Izquierda -->
+          <rect x="20" y="210" width="145" height="100" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowNode)"/>
+          <text x="93" y="242" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">📊 Reportes</text>
+          <text x="93" y="262" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Dashboard en</text>
+          <text x="93" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">tiempo real</text>
+          <text x="93" y="298" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Métricas y KPIs</text>
+          <line x1="155" y1="260" x2="482" y2="260" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.6"/>
+
+          <!-- Derecha -->
+          <rect x="935" y="210" width="145" height="100" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowNode)"/>
+          <text x="1008" y="242" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">⏱️ SLA</text>
+          <text x="1008" y="262" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Tiempos de</text>
+          <text x="1008" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">respuesta</text>
+          <text x="1008" y="298" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Escalaciones</text>
+          <line x1="935" y1="260" x2="618" y2="260" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.6"/>
+
+          <!-- Arriba -->
+          <rect x="380" y="5" width="145" height="100" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowNode)"/>
+          <text x="453" y="37" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">🌐 Canales</text>
+          <text x="453" y="57" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Email · Web · Chat</text>
+          <text x="453" y="73" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">WhatsApp · Teléfono</text>
+          <text x="453" y="93" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Redes · SMS · Teams</text>
+          <line x1="495" y1="100" x2="535" y2="192" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.6"/>
+
+          <!-- Abajo -->
+          <rect x="380" y="450" width="145" height="65" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shadowNode)"/>
+          <text x="453" y="480" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">🤖 IA Asistente</text>
+          <text x="453" y="500" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Resumen · Escritura · Tags</text>
+          <line x1="495" y1="450" x2="535" y2="328" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.6"/>
+
+          <!-- Etiqueta normativa -->
+          <rect x="400" y="30" width="140" height="24" rx="12" fill="rgba(0,114,161,0.1)"/>
+          <text x="470" y="46" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0072a1">Ley 1755 de 2015</text>
+          
+          <!-- Beneficio central pequeño -->
+          <text x="550" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0072a1">40% más rápido · 100% trazable · IA potenciada</text>
+        </svg>
       </div>
     </div>
   </section>
@@ -512,6 +716,7 @@
       <div class="cta-buttons">
         <a href="#" class="btn btn-white btn-lg">Solicitar Demo</a>
         <a href="#" class="btn btn-outline-white btn-lg">Hablar con un asesor</a>
+        <a href="brochure_zammad_poliedro_clientes.pdf" download class="btn btn-brochure-dark btn-lg">Descargar Brochure</a>
       </div>
       <div class="cta-contact">
         <div class="cta-contact-item">

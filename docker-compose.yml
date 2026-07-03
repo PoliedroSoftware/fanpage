@@ -1,0 +1,7 @@
+services:
+  pqrs:
+    build: ./pqrs
+    container_name: fanpage-pqrs
+    ports:
+      - "8080:80"
+    restart: unless-stopped
