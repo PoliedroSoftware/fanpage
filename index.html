@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zammad para PQRS | Poliedro</title>
+  <meta name="description" content="Transforma la gestión de PQRS con Zammad: software inteligente que centraliza, automatiza y acelera la respuesta a Peticiones, Quejas, Reclamos y Sugerencias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo_poliedro.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#que-es" class="nav-link">¿Qué es?</a>
+        <a href="#canales" class="nav-link">Canales</a>
+        <a href="#ia" class="nav-link">IA</a>
+        <a href="#caracteristicas" class="nav-link">Características</a>
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#planes" class="nav-link">Planes</a>
+      </div>
+      <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Software PQRS </span>
+        </div>
+        <h1 class="hero-title">
+          Transforma la gestión de <span class="text-gradient">PQRS</span> con inteligencia artificial
+        </h1>
+        <p class="hero-subtitle">
+          Centraliza todas tus Peticiones, Quejas, Reclamos y Sugerencias en una sola plataforma. 
+          Zammad combina la potencia de la IA con la calidez de la atención humana para ofrecer 
+          respuestas más rápidas, trazables y de calidad.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una demo gratuita</a>
+          <a href="#que-es" class="btn btn-outline btn-lg">Conoce más <span class="arrow-down">↓</span></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">+2,000</span>
+            <span class="hero-stat-label">Organizaciones</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">50,000+</span>
+            <span class="hero-stat-label">Usuarios</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">40+</span>
+            <span class="hero-stat-label">Idiomas</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="hero-card-title">Panel de PQRS</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="hero-ticket">
+              <div class="hero-ticket-icon hero-ticket-peticion">📝</div>
+              <div class="hero-ticket-info">
+                <span class="hero-ticket-type">Petición #1042</span>
+                <span class="hero-ticket-preview">Solicitud de información sobre trámite...</span>
+              </div>
+              <span class="hero-ticket-badge hero-badge-low">Baja</span>
+            </div>
+            <div class="hero-ticket">
+              <div class="hero-ticket-icon hero-ticket-queja">⚠️</div>
+              <div class="hero-ticket-info">
+                <span class="hero-ticket-type">Queja #1041</span>
+                <span class="hero-ticket-preview">Demora en la respuesta del área de...</span>
+              </div>
+              <span class="hero-ticket-badge hero-badge-high">Alta</span>
+            </div>
+            <div class="hero-ticket">
+              <div class="hero-ticket-icon hero-ticket-reclamo">🔴</div>
+              <div class="hero-ticket-info">
+                <span class="hero-ticket-type">Reclamo #1040</span>
+                <span class="hero-ticket-preview">Producto no cumple con las especificaciones...</span>
+              </div>
+              <span class="hero-ticket-badge hero-badge-urgent">Urgente</span>
+            </div>
+            <div class="hero-ticket">
+              <div class="hero-ticket-icon hero-ticket-sugerencia">💡</div>
+              <div class="hero-ticket-info">
+                <span class="hero-ticket-type">Sugerencia #1039</span>
+                <span class="hero-ticket-preview">Propuesta para mejorar tiempos de espera...</span>
+              </div>
+              <span class="hero-ticket-badge hero-badge-info">Nueva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES ZAMMAD? -->
+  <section class="section" id="que-es">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué es <span class="text-gradient">Zammad</span>?</h2>
+        <p class="section-subtitle">Una plataforma inteligente diseñada para gestionar cada interacción con tus ciudadanos o clientes, desde el primer contacto hasta la solución final.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon card-icon-blue">🎯</div>
+          <h3 class="card-title">Centraliza</h3>
+          <p class="card-text">Unifica todos los canales de comunicación en un solo lugar. Email, chat, WhatsApp, teléfono, formularios web y redes sociales convergen en una bandeja única.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-teal">⚡</div>
+          <h3 class="card-title">Automatiza</h3>
+          <p class="card-text">La IA clasifica, prioriza y asigna cada solicitud automáticamente. Elimina tareas repetitivas y deja que tu equipo se enfoque en lo que realmente importa: resolver.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-dark">📊</div>
+          <h3 class="card-title">Responde</h3>
+          <p class="card-text">Cumple con los tiempos legales de PQRS. Monitorea SLAs, genera reportes y demuestra transparencia con trazabilidad completa de cada caso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANALES -->
+  <section class="section section-alt" id="canales">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todos los canales, <span class="text-gradient">una sola plataforma</span></h2>
+        <p class="section-subtitle">Tus ciudadanos o clientes eligen cómo comunicarse. Zammad recibe y organiza cada mensaje sin importar de dónde venga.</p>
+      </div>
+      <div class="channels-grid">
+        <div class="channel-card">
+          <div class="channel-icon">📧</div>
+          <h4>Correo Electrónico</h4>
+          <p>Múltiples buzones integrados. Respuestas automáticas y firmas personalizadas por área.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🌐</div>
+          <h4>Formulario Web</h4>
+          <p>Portal de autogestión donde los usuarios crean y hacen seguimiento a sus PQRS.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">💬</div>
+          <h4>Chat en Vivo</h4>
+          <p>Resuelve consultas 7 veces más rápido que por email con el Smart Chat integrado.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">📱</div>
+          <h4>WhatsApp Business</h4>
+          <p>Atiende a tus usuarios donde ya están. Gestión directa desde Zammad sin salir de la plataforma.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">📞</div>
+          <h4>Teléfono (CTI)</h4>
+          <p>Integración con centrales telefónicas. Registro automático de llamadas y callback.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">📲</div>
+          <h4>Telegram</h4>
+          <p>Comunicación bidireccional instantánea. Ideal para notificaciones y seguimiento rápido.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">👍</div>
+          <h4>Facebook Messenger</h4>
+          <p>Responde comentarios y mensajes privados desde la misma interfaz de Zammad.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">💬</div>
+          <h4>SMS</h4>
+          <p>Notificaciones y comunicación bidireccional por mensaje de texto. Ideal para recordatorios.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🔗</div>
+          <h4>Microsoft Teams</h4>
+          <p>Recibe notificaciones de nuevos tickets directamente en Teams. Colabora sin cambiar de app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA -->
+  <section class="section" id="ia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Inteligencia Artificial</span>
+        <h2 class="section-title">IA que potencia, <span class="text-gradient">no reemplaza</span></h2>
+        <p class="section-subtitle">Zammad integra inteligencia artificial que trabaja junto a tu equipo: clasifica, resume, sugiere y acelera. Tú siempre tomas la decisión final.</p>
+      </div>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <div class="ai-card-header">
+            <div class="ai-card-icon">🤖</div>
+            <div>
+              <h3>AI Agents</h3>
+              <span class="ai-card-badge">Clasificación automática</span>
+            </div>
+          </div>
+          <p>Detecta y clasifica automáticamente cada ticket como Petición, Queja, Reclamo o Sugerencia. Asigna prioridad, área responsable y campos personalizados sin intervención manual.</p>
+          <ul class="ai-features">
+            <li>Clasificación por tipo de PQRS</li>
+            <li>Asignación automática al área correcta</li>
+            <li>Priorización inteligente según urgencia</li>
+            <li>Detección de duplicados</li>
+          </ul>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-header">
+            <div class="ai-card-icon">📋</div>
+            <div>
+              <h3>Resumen Inteligente</h3>
+              <span class="ai-card-badge">AI Ticket Summary</span>
+            </div>
+          </div>
+          <p>Convierte hilos largos de conversación en resúmenes estructurados en segundos. Extrae los puntos clave, decisiones y próximos pasos para que ningún detalle se escape.</p>
+          <ul class="ai-features">
+            <li>Síntesis de conversaciones extensas</li>
+            <li>Identificación de puntos de decisión</li>
+            <li>Análisis de sentimiento del usuario</li>
+            <li>Preguntas pendientes por resolver</li>
+          </ul>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-header">
+            <div class="ai-card-icon">✍️</div>
+            <div>
+              <h3>Asistente de Escritura</h3>
+              <span class="ai-card-badge">AI Writing Assistant</span>
+            </div>
+          </div>
+          <p>Ayuda a tu equipo a redactar respuestas profesionales, claras y consistentes. Corrige gramática, adapta el tono y asegura que cada respuesta cumpla con los estándares de calidad.</p>
+          <ul class="ai-features">
+            <li>Redacción profesional de respuestas</li>
+            <li>Corrección de ortografía y gramática</li>
+            <li>Adaptación de tono según el caso</li>
+            <li>Traducción multilingüe integrada</li>
+          </ul>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-header">
+            <div class="ai-card-icon">🏷️</div>
+            <div>
+              <h3>Etiquetado Automático</h3>
+              <span class="ai-card-badge">AI Ticket Tagger</span>
+            </div>
+          </div>
+          <p>Identifica temas y patrones en el contenido de los tickets para agregar etiquetas automáticamente. Visualiza tendencias y anticipa necesidades recurrentes.</p>
+          <ul class="ai-features">
+            <li>Categorización temática automática</li>
+            <li>Detección de tendencias y patrones</li>
+            <li>Organización consistente de tickets</li>
+            <li>Base para reportes de gestión</li>
+          </ul>
+        </div>
+        <div class="ai-card ai-card-featured">
+          <div class="ai-card-header">
+            <div class="ai-card-icon">🔒</div>
+            <div>
+              <h3>Soberanía de Datos</h3>
+              <span class="ai-card-badge">Tú eliges el modelo</span>
+            </div>
+          </div>
+          <p>Zammad te permite elegir qué modelo de IA usar y dónde se procesan tus datos. Cumple con el EU AI Act y GDPR usando LLMs locales o el proveedor de tu preferencia.</p>
+          <ul class="ai-features">
+            <li>Zammad AI (gestionado)</li>
+            <li>OpenAI / Azure / Anthropic</li>
+            <li>Ollama (modelos locales)</li>
+            <li>Zero data leakage garantizado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="section section-alt" id="caracteristicas">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todo lo que necesitas para <span class="text-gradient">gestionar PQRS</span></h2>
+        <p class="section-subtitle">Funcionalidades pensadas para equipos que exigen trazabilidad, eficiencia y cumplimiento normativo.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">📊</span>
+          <div>
+            <h4>Dashboard en Tiempo Real</h4>
+            <p>Visualiza el estado de todos los tickets, cargas de trabajo y tiempos de respuesta desde un solo panel.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⏱️</span>
+          <div>
+            <h4>SLA y Escalaciones</h4>
+            <p>Define tiempos máximos de respuesta por tipo de PQRS. Escala automáticamente si se acerca el vencimiento.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📚</span>
+          <div>
+            <h4>Base de Conocimiento</h4>
+            <p>Centraliza respuestas frecuentes, normativas y guías. Tu equipo y usuarios encuentran lo que necesitan al instante.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔍</span>
+          <div>
+            <h4>Trazabilidad Completa</h4>
+            <p>Historial de cada cambio: quién, qué y cuándo. Auditoría lista para entes de control. 40GB buscables en 3 segundos.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⚙️</span>
+          <div>
+            <h4>Campos Personalizados</h4>
+            <p>Adapta los formularios a tus necesidades: número de radicado, tipo de documento, dependencia, y más.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔄</span>
+          <div>
+            <h4>Flujos de Trabajo</h4>
+            <p>Define rutas de aprobación, asignación automática y reglas de negocio para cada tipo de solicitud.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌍</span>
+          <div>
+            <h4>Multilenguaje (40+)</h4>
+            <p>Interfaz y respuestas en el idioma del usuario. Detección automática del idioma del ticket entrante.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⭐</span>
+          <div>
+            <h4>Clientes VIP</h4>
+            <p>Resalta PQRS de usuarios prioritarios. Dispara notificaciones y rutas de atención preferenciales.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <div>
+            <h4>Diseño Responsive</h4>
+            <p>Gestiona tickets desde cualquier dispositivo. Interfaz adaptada para móvil, tablet y escritorio.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔐</span>
+          <div>
+            <h4>Seguridad Empresarial</h4>
+            <p>2FA, SSO (SAML/OIDC), S/MIME, PGP, ISO 27001, GDPR. Comunicación cifrada de extremo a extremo.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📄</span>
+          <div>
+            <h4>Plantillas y Macros</h4>
+            <p>Acelera respuestas con plantillas predefinidas. Consistencia en cada comunicación sin escribir desde cero.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔗</span>
+          <div>
+            <h4>API REST y Webhooks</h4>
+            <p>Conecta Zammad con tus sistemas existentes. Información en tiempo real entre todas tus plataformas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resultados <span class="text-gradient">que se miden</span></h2>
+        <p class="section-subtitle">Zammad transforma la operación de PQRS con mejoras cuantificables desde el primer mes.</p>
+      </div>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <span class="beneficio-number">40%</span>
+          <span class="beneficio-label">más rápidas las respuestas</span>
+          <p>Reduce drásticamente el tiempo de primera respuesta y resolución con IA y automatización.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">70%</span>
+          <span class="beneficio-label">menos tareas rutinarias</span>
+          <p>Elimina clasificación manual, asignaciones repetitivas y búsqueda de duplicados.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">+50%</span>
+          <span class="beneficio-label">ahorro en costos operativos</span>
+          <p>Optimiza recursos, reduce escalaciones innecesarias y maximiza la productividad del equipo.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">100%</span>
+          <span class="beneficio-label">trazabilidad y cumplimiento</span>
+          <p>Cada acción queda registrada. Auditoría lista para cumplir con entes de control y normativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section section-alt" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tres caminos, <span class="text-gradient">un solo objetivo</span></h2>
+        <p class="section-subtitle">Elige el modelo de implementación que mejor se adapte a tu organización. Poliedro te acompaña en cada paso.</p>
+      </div>
+      <div class="planes-grid">
+        <div class="plan-card">
+          <div class="plan-icon">☁️</div>
+          <h3>Zammad como SaaS</h3>
+          <p class="plan-desc">Nosotros nos encargamos de todo: hosting, mantenimiento, actualizaciones y seguridad. Tus datos protegidos en servidores alemanes, 100% GDPR.</p>
+          <ul class="plan-features">
+            <li>Sin preocupaciones de infraestructura</li>
+            <li>Actualizaciones automáticas</li>
+            <li>Soporte técnico incluido</li>
+            <li>Disponibilidad garantizada</li>
+          </ul>
+        </div>
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">Recomendado para PQRS</div>
+          <div class="plan-icon">🏠</div>
+          <h3>Self-Hosted</h3>
+          <p class="plan-desc">Instala Zammad en tu propia infraestructura. Control total sobre los datos, ideal para entidades gubernamentales con requisitos estrictos de soberanía.</p>
+          <ul class="plan-features">
+            <li>Datos 100% en tus servidores</li>
+            <li>Personalización total (CSS/API)</li>
+            <li>Integración con LDAP/Active Directory</li>
+            <li>Soporte profesional de Poliedro</li>
+          </ul>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🎓</div>
+          <h3>Acompañamiento Profesional</h3>
+          <p class="plan-desc">Consultoría, migración desde tu sistema actual, configuración, capacitación de agentes y administradores. Te guiamos de principio a fin.</p>
+          <ul class="plan-features">
+            <li>Migración desde OTRS, Zendesk, Freshdesk</li>
+            <li>Configuración personalizada de flujos PQRS</li>
+            <li>Capacitación de equipos</li>
+            <li>Soporte continuo post-implementación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="section" id="confianza">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Confianza <span class="text-gradient">global</span></h2>
+        <p class="section-subtitle">Organizaciones de todos los tamaños y sectores confían en Zammad para su atención al cliente y gestión de soporte.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-name">De'Longhi</div>
+          <div class="trust-stat">~4,700 tickets/mes</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Amnesty International</div>
+          <div class="trust-stat">150 países activos</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Universidad de Oxford</div>
+          <div class="trust-stat">St Edmund Hall</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Gobierno de Salzburgo</div>
+          <div class="trust-stat">Sector público</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Nextcloud</div>
+          <div class="trust-stat">Tecnología</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">RSB Bank</div>
+          <div class="trust-stat">Sector financiero</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container cta-container">
+      <h2 class="cta-title">¿Listo para transformar la gestión de PQRS en tu organización?</h2>
+      <p class="cta-subtitle">Agenda una demo personalizada con nuestros expertos. Te mostramos cómo Zammad puede adaptarse exactamente a tus necesidades.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-lg">Solicitar Demo</a>
+        <a href="#" class="btn btn-outline-white btn-lg">Hablar con un asesor</a>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-item">
+          <span>📧</span> contacto@poliedro.com
+        </div>
+        <div class="cta-contact-item">
+          <span>📞</span> +57 (XX) XXX XXXX
+        </div>
+        <div class="cta-contact-item">
+          <span>🌐</span> www.poliedro.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo_poliedro.png" alt="Poliedro" class="footer-logo">
+        <p>Transformamos la gestión de PQRS con tecnología inteligente, abierta y centrada en las personas.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Soluciones</h5>
+          <a href="#canales">Canales</a>
+          <a href="#ia">Inteligencia Artificial</a>
+          <a href="#caracteristicas">Características</a>
+          <a href="#beneficios">Beneficios</a>
+        </div>
+        <div class="footer-col">
+          <h5>Plataforma</h5>
+          <a href="#planes">Planes</a>
+          <a href="#confianza">Casos de éxito</a>
+          <a href="#">Documentación</a>
+          <a href="#">Zammad Open Source</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="#">Demo</a>
+          <a href="#">Soporte</a>
+          <a href="#">Consultoría</a>
+          <a href="#">Poliedro</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Poliedro. Todos los derechos reservados. Zammad es una marca registrada de Zammad GmbH.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
