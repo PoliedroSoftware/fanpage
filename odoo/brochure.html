@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure Odoo Enterprise Colombia — Poliedro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #8b5cf6;
+      --primary-dark: #6d28d9;
+      --poliedro: #0072a1;
+      --navy: #183146;
+      --navy-dark: #0f1e2d;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-500: #64748b;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      page-break-after: always;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { box-shadow: none; margin: 0; width: auto; min-height: auto; }
+      .no-print { display: none; }
+    }
+
+    @media screen {
+      body { background: #e2e8f0; }
+      .page {
+        background: white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        margin: 20px auto;
+      }
+    }
+
+    .cover {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #1a0a3e 40%, var(--primary-dark) 100%);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(139,92,246,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(0,114,161,0.2) 0%, transparent 60%);
+    }
+
+    .cover-content { position: relative; z-index: 1; }
+
+    .cover-logo { height: 55px; width: auto; margin-bottom: 60px; filter: brightness(0) invert(1); }
+
+    .cover-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 24px;
+      letter-spacing: 0.03em;
+    }
+
+    .cover h1 {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .cover h1 span {
+      background: linear-gradient(135deg, #a78bfa, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cover p {
+      font-size: 18px;
+      opacity: 0.8;
+      line-height: 1.7;
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+
+    .cover-modules {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .cover-mod {
+      padding: 14px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .cover-mod-icon { font-size: 26px; margin-bottom: 6px; }
+    .cover-mod-label { font-size: 11px; font-weight: 600; opacity: 0.85; }
+
+    .inner {
+      padding: 50px 50px 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .inner-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .inner-header-line {
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--poliedro));
+      border-radius: 2px;
+    }
+
+    .inner-header span {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+    }
+
+    .inner h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .inner h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 6px;
+    }
+
+    .inner p, .inner li {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.65;
+    }
+
+    .inner-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .inner-grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .inner-card {
+      background: var(--gray-100);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .inner-card-icon { font-size: 24px; margin-bottom: 8px; }
+
+    .feature-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .feature-list li {
+      padding-left: 18px;
+      position: relative;
+      font-size: 12px;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    .benefits-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .benefit-box {
+      background: linear-gradient(135deg, rgba(139,92,246,0.05) 0%, rgba(0,114,161,0.05) 100%);
+      border-radius: 12px;
+      padding: 22px 14px;
+      text-align: center;
+      border: 1px solid rgba(139,92,246,0.1);
+    }
+
+    .benefit-number {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--poliedro));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .benefit-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .fe-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .fe-node {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      padding: 12px 16px;
+      text-align: center;
+      min-width: 90px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .fe-node-dian {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      border: none;
+    }
+
+    .fe-arrow { font-size: 18px; color: var(--poliedro); }
+
+    .contact-section {
+      background: var(--gray-100);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--gray-700);
+    }
+
+    .page-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--gray-500);
+    }
+
+    .download-bar {
+      text-align: center;
+      padding: 16px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PORTADA -->
+  <div class="page cover">
+    <div class="cover-content">
+      <img src="logo_poliedro.png" alt="Poliedro" class="cover-logo">
+      <div class="cover-badge">Odoo Enterprise Colombia</div>
+      <h1>El ERP que integra tu<br><span>retail, inventario y contabilidad</span></h1>
+      <p>Odoo Enterprise con localización colombiana. Facturación electrónica DIAN, POS para retail, inventario multi-almacén y contabilidad NIIF en una sola plataforma.</p>
+      <div class="cover-modules">
+        <div class="cover-mod">
+          <div class="cover-mod-icon">📄</div>
+          <div class="cover-mod-label">Facturación Electrónica</div>
+        </div>
+        <div class="cover-mod">
+          <div class="cover-mod-icon">💰</div>
+          <div class="cover-mod-label">Ventas y POS</div>
+        </div>
+        <div class="cover-mod">
+          <div class="cover-mod-icon">📦</div>
+          <div class="cover-mod-label">Inventario</div>
+        </div>
+        <div class="cover-mod">
+          <div class="cover-mod-icon">📊</div>
+          <div class="cover-mod-label">Contabilidad NIIF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 2: Módulos -->
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Módulos</span></div>
+    <h2>Ecosistema de módulos integrados</h2>
+    <p style="margin-bottom:20px;">Cada módulo funciona de forma independiente, pero la potencia real está en la integración total: una venta actualiza automáticamente el inventario, genera la factura electrónica, la envía a la DIAN y la contabiliza sin intervención manual.</p>
+
+    <div class="inner-grid-3">
+      <div class="inner-card">
+        <div class="inner-card-icon">📄</div>
+        <h3>Facturación Electrónica</h3>
+        <p>Emisión y recepción de FE cumpliendo resolución DIAN 000042/2020. Firma digital, CUFE/CUDE automático, notas crédito y documento soporte.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">🛒</div>
+        <h3>Ventas y POS</h3>
+        <p>Punto de venta táctil para retail, ventas B2B al por mayor, listas de precios, cotizaciones y pedidos. Todo conectado con inventario en tiempo real.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">📦</div>
+        <h3>Inventario</h3>
+        <p>Multi-almacén, ubicaciones, trazabilidad por lote y serie, conteos cíclicos, valorización automática y control de vencimientos.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">🛒</div>
+        <h3>Compras</h3>
+        <p>Órdenes de compra, proveedores, lista de precios de compra, recepción de mercancía y control de calidad integrado.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">📊</div>
+        <h3>Contabilidad</h3>
+        <p>Plan de cuentas colombiano NIIF, IVA, retefuente, ICA, conciliación bancaria, estados financieros y reportes tributarios.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">👥</div>
+        <h3>CRM</h3>
+        <p>Pipeline de ventas, seguimiento de clientes, historial completo de interacciones y conversión de oportunidades a cotizaciones.</p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Poliedro — Odoo Enterprise Colombia</span>
+      <span>poliedrosoftware.com</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 3: FE + Retail -->
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Facturación Electrónica</span></div>
+    <h2>Ciclo completo de facturación electrónica en Odoo</h2>
+    <p>Odoo automatiza todo el proceso de FE sin software externo, cumpliendo con cada paso exigido por la DIAN.</p>
+
+    <div class="fe-flow">
+      <div class="fe-node">📝 Emisión<br><span style="font-size:10px;color:var(--gray-500);">XML UBL 2.1</span></div>
+      <div class="fe-arrow">→</div>
+      <div class="fe-node">🔏 Firma<br><span style="font-size:10px;color:var(--gray-500);">XAdES-EPES</span></div>
+      <div class="fe-arrow">→</div>
+      <div class="fe-node fe-node-dian">🏛️ DIAN<br><span style="font-size:10px;opacity:0.8;">Validación</span></div>
+      <div class="fe-arrow">→</div>
+      <div class="fe-node">📧 Envío<br><span style="font-size:10px;color:var(--gray-500);">Email + PDF</span></div>
+      <div class="fe-arrow">→</div>
+      <div class="fe-node">📊 Contabilidad<br><span style="font-size:10px;color:var(--gray-500);">Asiento automático</span></div>
+    </div>
+
+    <div class="inner-header" style="margin-top:24px;"><div class="inner-header-line"></div><span>Retail</span></div>
+    <h2>Mayor y detal en un solo sistema</h2>
+
+    <div class="inner-grid-2">
+      <div class="inner-card">
+        <div class="inner-card-icon">🛍️</div>
+        <h3>Ventas al Detal (POS)</h3>
+        <ul class="feature-list" style="display:flex;flex-direction:column;">
+          <li>Interfaz táctil rápida e intuitiva</li>
+          <li>Lector de código de barras integrado</li>
+          <li>Múltiples métodos de pago</li>
+          <li>Funciona online y offline</li>
+          <li>Impresión ticket + FE</li>
+          <li>Múltiples cajas sincronizadas</li>
+        </ul>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">🏢</div>
+        <h3>Ventas al por Mayor (B2B)</h3>
+        <ul class="feature-list" style="display:flex;flex-direction:column;">
+          <li>Listas de precios por cliente y volumen</li>
+          <li>Pedidos recurrentes automáticos</li>
+          <li>Límites de crédito y cartera</li>
+          <li>Portal web B2B para clientes</li>
+          <li>Cotizaciones convertibles en 1 clic</li>
+          <li>Comisiones de vendedores</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Poliedro — Odoo Enterprise Colombia</span>
+      <span>poliedrosoftware.com</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 4: Planes + Contacto -->
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Beneficios</span></div>
+    <div class="benefits-row">
+      <div class="benefit-box">
+        <div class="benefit-number">50%</div>
+        <div class="benefit-label">menos tiempo administrativo</div>
+      </div>
+      <div class="benefit-box">
+        <div class="benefit-number">100%</div>
+        <div class="benefit-label">inventario trazable</div>
+      </div>
+      <div class="benefit-box">
+        <div class="benefit-number">0</div>
+        <div class="benefit-label">software externo para FE</div>
+      </div>
+      <div class="benefit-box">
+        <div class="benefit-number">+35%</div>
+        <div class="benefit-label">margen operativo</div>
+      </div>
+    </div>
+
+    <div class="inner-header" style="margin-top:24px;"><div class="inner-header-line"></div><span>Planes</span></div>
+    <h2>Implementación a tu medida</h2>
+    <div class="inner-grid-3">
+      <div class="inner-card">
+        <div class="inner-card-icon">☁️</div>
+        <h3>SaaS</h3>
+        <p>Infraestructura gestionada por Poliedro. Sin preocupaciones de servidores. Backups diarios y soporte 24/7.</p>
+      </div>
+      <div class="inner-card" style="border:2px solid #a78bfa;">
+        <div class="inner-card-icon">🏠</div>
+        <h3>Self-Hosted ★</h3>
+        <p>Instalación en tu propia infraestructura. Control total sobre hardware y datos. Ideal para empresas con auditoría.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">🎓</div>
+        <h3>Acompañamiento</h3>
+        <p>Migración, parametrización contable colombiana, capacitación y soporte en go-live. Te guiamos paso a paso.</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h3 style="text-align:center;margin-bottom:16px;">Contáctanos</h3>
+      <div class="contact-row">
+        <div class="contact-item">📧 poliedrosoftware@gmail.com</div>
+        <div class="contact-item">📞 +57 315 7690579</div>
+        <div class="contact-item">🌐 poliedrosoftware.com</div>
+        <div class="contact-item">💬 WhatsApp +57 315 4286798</div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>&copy; 2026 Poliedro. Todos los derechos reservados.</span>
+      <span>Odoo es marca registrada de Odoo S.A.</span>
+    </div>
+  </div>
+
+  <div class="download-bar no-print">
+    <a href="brochure.html" download class="download-btn">Descargar como PDF</a>
+    <p style="margin-top:8px;font-size:12px;color:var(--gray-500);">También puedes imprimir esta página (Ctrl+P) y guardar como PDF.</p>
+  </div>
+
+</body>
+</html>

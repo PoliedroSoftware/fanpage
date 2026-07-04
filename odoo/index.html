@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odoo Enterprise Colombia | ERP, Contabilidad y Facturación Electrónica | Poliedro</title>
+  <meta name="description" content="Odoo Enterprise con localización colombiana: contabilidad NIIF, facturación electrónica DIAN, POS para retail, inventario, ventas al por mayor y detal. ERP integrado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo_poliedro.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#que-es" class="nav-link">¿Qué es?</a>
+        <a href="#modulos" class="nav-link">Módulos</a>
+        <a href="#facturacion" class="nav-link">Facturación Electrónica</a>
+        <a href="#retail" class="nav-link">Retail</a>
+        <a href="#features" class="nav-link">Características</a>
+        <a href="#planes" class="nav-link">Planes</a>
+      </div>
+      <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Odoo Enterprise Colombia</span>
+        </div>
+        <h1 class="hero-title">
+          El ERP que integra tu <span class="text-gradient">retail, inventario y contabilidad</span> en un solo lugar
+        </h1>
+        <p class="hero-subtitle">
+          Odoo Enterprise con localización colombiana. Facturación electrónica DIAN, punto de venta, inventario multi-almacén, ventas al por mayor y detal. Todo conectado en tiempo real sin software externo.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una demo gratuita</a>
+          <a href="brochure.html" class="btn btn-outline btn-lg">Descargar Brochure</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">12M+</span>
+            <span class="hero-stat-label">Usuarios globales</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">70+</span>
+            <span class="hero-stat-label">Apps oficiales</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">120+</span>
+            <span class="hero-stat-label">Países</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card odoo-dash">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="hero-card-title">Panel de Ventas — Retail</span>
+          </div>
+          <div class="hero-card-body odoo-kpi">
+            <div class="odoo-kpi-row">
+              <div class="odoo-kpi-box">
+                <span class="odoo-kpi-value">$48.2M</span>
+                <span class="odoo-kpi-label">Ventas del mes</span>
+              </div>
+              <div class="odoo-kpi-box">
+                <span class="odoo-kpi-value">1,247</span>
+                <span class="odoo-kpi-label">Órdenes</span>
+              </div>
+              <div class="odoo-kpi-box">
+                <span class="odoo-kpi-value">94%</span>
+                <span class="odoo-kpi-label">Entregas a tiempo</span>
+              </div>
+            </div>
+            <div class="odoo-chart-bar">
+              <span class="odoo-chart-label">Ventas última semana</span>
+              <div class="odoo-bars">
+                <div class="odoo-bar" style="height:60%"></div>
+                <div class="odoo-bar" style="height:45%"></div>
+                <div class="odoo-bar" style="height:80%"></div>
+                <div class="odoo-bar" style="height:55%"></div>
+                <div class="odoo-bar" style="height:90%"></div>
+                <div class="odoo-bar" style="height:70%"></div>
+                <div class="odoo-bar active" style="height:95%"></div>
+              </div>
+            </div>
+            <div class="odoo-modules-mini">
+              <span class="odoo-module-tag">📄 FE</span>
+              <span class="odoo-module-tag">💰 Ventas</span>
+              <span class="odoo-module-tag">📦 Inventario</span>
+              <span class="odoo-module-tag">📊 Contabilidad</span>
+              <span class="odoo-module-tag">🛒 Compras</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES ODOO? -->
+  <section class="section" id="que-es">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué es <span class="text-gradient">Odoo</span>?</h2>
+        <p class="section-subtitle">Odoo es la suite de gestión empresarial más completa del mundo. Más de 70 aplicaciones integradas que cubren todas las áreas de tu negocio: ventas, inventario, contabilidad, facturación electrónica, compras, CRM y mucho más.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon card-icon-blue">🧩</div>
+          <h3 class="card-title">ERP Todo en Uno</h3>
+          <p class="card-text">Ventas, compras, inventario, contabilidad y facturación electrónica funcionando en una sola plataforma. Sin integraciones costosas, sin duplicar datos, sin perder tiempo conciliando sistemas.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-teal">🔓</div>
+          <h3 class="card-title">Open Source + Enterprise</h3>
+          <p class="card-text">Código abierto que te da libertad total. La versión Enterprise agrega funcionalidades avanzadas, soporte profesional, actualizaciones continuas y apps móviles ilimitadas.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-dark">🇨🇴</div>
+          <h3 class="card-title">Localización Colombia</h3>
+          <p class="card-text">Contabilidad NIIF, plan de cuentas colombiano, retenciones en la fuente, ICA, IVA, impuestos locales, y facturación electrónica 100% integrada con la DIAN. Cumplimiento fiscal desde el día uno.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSISTEMA DE MÓDULOS -->
+  <section class="section section-alt" id="modulos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ecosistema de <span class="text-gradient">módulos integrados</span></h2>
+        <p class="section-subtitle">Cada módulo de Odoo funciona por sí solo, pero el verdadero poder está en cómo se conectan entre sí para automatizar cada proceso de tu negocio.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 600" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <filter id="shMod"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter>
+            <filter id="shCenter"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.3"/></filter>
+            <linearGradient id="gcOdoo" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6"/><stop offset="50%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#6d28d9"/>
+            </linearGradient>
+            <linearGradient id="gcInvoice" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#2d97bf"/>
+            </linearGradient>
+            <linearGradient id="gcSales" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/>
+            </linearGradient>
+            <linearGradient id="gcPurchase" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+            <linearGradient id="gcInventory" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#dc2626"/>
+            </linearGradient>
+            <linearGradient id="gcAccounting" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#2563eb"/>
+            </linearGradient>
+            <linearGradient id="gcCRM" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ec4899"/><stop offset="100%" stop-color="#db2777"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Centro Odoo -->
+          <circle cx="550" cy="300" r="72" fill="url(#gcOdoo)" filter="url(#shCenter)"/>
+          <text x="550" y="290" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white">Odoo</text>
+          <text x="550" y="312" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,0.85)">Enterprise</text>
+
+          <!-- 1. Facturación Electrónica (top-left) -->
+          <rect x="80" y="55" width="200" height="92" rx="14" fill="white" stroke="#0072a1" stroke-width="2" filter="url(#shMod)"/>
+          <rect x="80" y="55" width="200" height="30" rx="14" fill="url(#gcInvoice)"/>
+          <rect x="80" y="71" width="200" height="14" fill="url(#gcInvoice)"/>
+          <text x="180" y="76" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📄 Facturación Electrónica</text>
+          <text x="180" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Emisión y recepción FE</text>
+          <text x="180" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Validación DIAN en tiempo real</text>
+          <text x="180" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Notas crédito y débito</text>
+          <line x1="230" y1="110" x2="488" y2="268" stroke="#0072a1" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 2. Ventas / POS (top-right) -->
+          <rect x="820" y="55" width="200" height="92" rx="14" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shMod)"/>
+          <rect x="820" y="55" width="200" height="30" rx="14" fill="url(#gcSales)"/>
+          <rect x="820" y="71" width="200" height="14" fill="url(#gcSales)"/>
+          <text x="920" y="76" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">💰 Ventas y POS</text>
+          <text x="920" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Punto de venta táctil</text>
+          <text x="920" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Mayor y detal integrados</text>
+          <text x="920" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Listas de precios por cliente</text>
+          <line x1="870" y1="110" x2="612" y2="268" stroke="#10b981" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 3. Compras (right-mid) -->
+          <rect x="870" y="260" width="180" height="82" rx="14" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shMod)"/>
+          <rect x="870" y="260" width="180" height="28" rx="14" fill="url(#gcPurchase)"/>
+          <rect x="870" y="274" width="180" height="14" fill="url(#gcPurchase)"/>
+          <text x="960" y="279" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">🛒 Compras</text>
+          <text x="960" y="305" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Órdenes de compra</text>
+          <text x="960" y="321" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Proveedores y precios</text>
+          <text x="960" y="337" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Recepción y control</text>
+          <line x1="870" y1="300" x2="618" y2="300" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 4. Inventario (bottom-right) -->
+          <rect x="820" y="460" width="200" height="92" rx="14" fill="white" stroke="#ef4444" stroke-width="2" filter="url(#shMod)"/>
+          <rect x="820" y="460" width="200" height="30" rx="14" fill="url(#gcInventory)"/>
+          <rect x="820" y="476" width="200" height="14" fill="url(#gcInventory)"/>
+          <text x="920" y="481" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📦 Inventario</text>
+          <text x="920" y="509" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Multi-almacén y ubicaciones</text>
+          <text x="920" y="525" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Trazabilidad por lote/serie</text>
+          <text x="920" y="541" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Conteo cíclico y ajustes</text>
+          <line x1="870" y1="495" x2="612" y2="332" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 5. Contabilidad (bottom-left) -->
+          <rect x="80" y="460" width="200" height="92" rx="14" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shMod)"/>
+          <rect x="80" y="460" width="200" height="30" rx="14" fill="url(#gcAccounting)"/>
+          <rect x="80" y="476" width="200" height="14" fill="url(#gcAccounting)"/>
+          <text x="180" y="481" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📊 Contabilidad</text>
+          <text x="180" y="509" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">NIIF / Plan de cuentas COL</text>
+          <text x="180" y="525" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Impuestos y retenciones</text>
+          <text x="180" y="541" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Estados financieros</text>
+          <line x1="230" y1="495" x2="488" y2="332" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 6. CRM (left-mid) -->
+          <rect x="50" y="260" width="180" height="82" rx="14" fill="white" stroke="#ec4899" stroke-width="2" filter="url(#shMod)"/>
+          <rect x="50" y="260" width="180" height="28" rx="14" fill="url(#gcCRM)"/>
+          <rect x="50" y="274" width="180" height="14" fill="url(#gcCRM)"/>
+          <text x="140" y="279" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">👥 CRM</text>
+          <text x="140" y="305" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Pipeline de ventas</text>
+          <text x="140" y="321" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Clientes y oportunidades</text>
+          <text x="140" y="337" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Seguimiento automatizado</text>
+          <line x1="230" y1="300" x2="482" y2="300" stroke="#ec4899" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Apps secundarias -->
+          <rect x="380" y="30" width="130" height="48" rx="10" fill="white" stroke="#e2e8f0" filter="url(#shMod)"/>
+          <text x="445" y="53" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#475569">🌐 E-commerce</text>
+          <text x="445" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Integración web</text>
+          <line x1="470" y1="70" x2="520" y2="235" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+          <rect x="590" y="30" width="130" height="48" rx="10" fill="white" stroke="#e2e8f0" filter="url(#shMod)"/>
+          <text x="655" y="53" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#475569">📱 App Móvil</text>
+          <text x="655" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">iOS y Android</text>
+          <line x1="625" y1="70" x2="575" y2="235" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+          <!-- Footer label -->
+          <rect x="385" y="568" width="330" height="24" rx="12" fill="rgba(139,92,246,0.08)"/>
+          <text x="550" y="584" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#7c3aed">70+ aplicaciones integradas · Un solo sistema · Datos en tiempo real</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTURACIÓN ELECTRÓNICA -->
+  <section class="section" id="facturacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Cumplimiento DIAN</span>
+        <h2 class="section-title">Facturación Electrónica <span class="text-gradient">integrada y automática</span></h2>
+        <p class="section-subtitle">Odoo genera, firma, transmite y recibe facturas electrónicas cumpliendo con todas las resoluciones de la DIAN. Sin software externo, sin procesos manuales, sin errores.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <marker id="feArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#0072a1"/>
+            </marker>
+            <filter id="feShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+            <linearGradient id="feGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#51bbe3"/>
+            </linearGradient>
+            <linearGradient id="feGradDian" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#6d28d9"/>
+            </linearGradient>
+          </defs>
+
+          <!-- PASO 1 -->
+          <rect x="15" y="85" width="175" height="110" rx="12" fill="white" stroke="#e2e8f0" filter="url(#feShadow)"/>
+          <circle cx="40" cy="105" r="14" fill="url(#feGrad)"/>
+          <text x="40" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="white">1</text>
+          <text x="105" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Emisión</text>
+          <text x="105" y="142" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Odoo genera la FE</text>
+          <text x="105" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">XML UBL 2.1 estándar DIAN</text>
+          <text x="105" y="174" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">CUFE/CUDE automático</text>
+          <text x="105" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">QR y representación gráfica</text>
+
+          <line x1="190" y1="140" x2="235" y2="140" stroke="#0072a1" stroke-width="2.5" marker-end="url(#feArrow)"/>
+
+          <!-- PASO 2 -->
+          <rect x="240" y="85" width="175" height="110" rx="12" fill="white" stroke="#e2e8f0" filter="url(#feShadow)"/>
+          <circle cx="265" cy="105" r="14" fill="url(#feGrad)"/>
+          <text x="265" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="white">2</text>
+          <text x="328" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Firma Digital</text>
+          <text x="328" y="142" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Certificado digital</text>
+          <text x="328" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Firma XAdES-EPES</text>
+          <text x="328" y="174" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Sello de integridad</text>
+          <text x="328" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Proveedor tecnológico autorizado</text>
+
+          <line x1="415" y1="140" x2="460" y2="140" stroke="#0072a1" stroke-width="2.5" marker-end="url(#feArrow)"/>
+
+          <!-- PASO 3 - DIAN -->
+          <rect x="465" y="75" width="190" height="130" rx="12" fill="white" stroke="#8b5cf6" stroke-width="2.5" filter="url(#feShadow)"/>
+          <rect x="465" y="75" width="190" height="32" rx="12" fill="url(#feGradDian)"/>
+          <rect x="465" y="93" width="190" height="14" fill="url(#feGradDian)"/>
+          <text x="560" y="97" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">🏛️ Validación DIAN</text>
+          <circle cx="490" cy="100" r="14" fill="rgba(255,255,255,0.2)"/>
+          <text x="490" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="white">3</text>
+          <text x="560" y="130" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Validación en tiempo real</text>
+          <text x="560" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Aceptación o rechazo</text>
+          <text x="560" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Código de validación</text>
+          <text x="560" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Tracking automático en Odoo</text>
+
+          <line x1="655" y1="140" x2="700" y2="140" stroke="#0072a1" stroke-width="2.5" marker-end="url(#feArrow)"/>
+
+          <!-- PASO 4 -->
+          <rect x="705" y="85" width="175" height="110" rx="12" fill="white" stroke="#e2e8f0" filter="url(#feShadow)"/>
+          <circle cx="730" cy="105" r="14" fill="url(#feGrad)"/>
+          <text x="730" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="white">4</text>
+          <text x="793" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Envío al Cliente</text>
+          <text x="793" y="142" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Email automático con PDF</text>
+          <text x="793" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">XML adjunto</text>
+          <text x="793" y="174" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Portal cliente Odoo</text>
+          <text x="793" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Consulta en línea DIAN</text>
+
+          <line x1="880" y1="140" x2="925" y2="140" stroke="#0072a1" stroke-width="2.5" marker-end="url(#feArrow)"/>
+
+          <!-- PASO 5 -->
+          <rect x="930" y="85" width="155" height="110" rx="12" fill="white" stroke="#10b981" stroke-width="2" filter="url(#feShadow)"/>
+          <circle cx="955" cy="105" r="14" fill="#10b981"/>
+          <text x="955" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="white">5</text>
+          <text x="1008" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Contabilización</text>
+          <text x="1008" y="142" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Asiento automático</text>
+          <text x="1008" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">IVA / Retefuente</text>
+          <text x="1008" y="174" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Libros fiscales</text>
+          <text x="1008" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Reportes DIAN</text>
+
+          <!-- Barra inferior -->
+          <rect x="15" y="230" width="1070" height="38" rx="10" fill="rgba(0,114,161,0.05)" stroke="#abd1e6" stroke-dasharray="6,3"/>
+          <text x="550" y="254" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#0072a1">Resolución DIAN 000042/2020 · Notas Crédito y Débito · Documento Soporte · Recepción FE de proveedores</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETAIL: MAYOR Y DETAL -->
+  <section class="section section-alt" id="retail">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Retail: <span class="text-gradient">mayor y detal</span> en un solo sistema</h2>
+        <p class="section-subtitle">Odoo gestiona tus dos canales de venta de forma nativa: el punto de venta para clientes de a pie y las ventas B2B al por mayor, con precios, inventario y contabilidad sincronizados.</p>
+      </div>
+      <div class="retail-duo">
+        <div class="retail-card retail-detal">
+          <div class="retail-card-badge">Ventas al Detal</div>
+          <div class="retail-icon">🛍️</div>
+          <h3>Punto de Venta (POS)</h3>
+          <ul class="retail-features">
+            <li>Interfaz táctil rápida e intuitiva</li>
+            <li>Lector de código de barras integrado</li>
+            <li>Múltiples métodos de pago (efectivo, tarjeta, QR, transferencia)</li>
+            <li>Apertura y cierre de caja automatizado</li>
+            <li>Programa de fidelización y descuentos</li>
+            <li>Funciona online y offline</li>
+            <li>Impresión de ticket y factura electrónica</li>
+            <li>Múltiples cajas y tiendas sincronizadas</li>
+          </ul>
+        </div>
+        <div class="retail-card retail-mayor">
+          <div class="retail-card-badge">Ventas al por Mayor</div>
+          <div class="retail-icon">🏢</div>
+          <h3>Ventas B2B</h3>
+          <ul class="retail-features">
+            <li>Listas de precios por cliente, volumen y canal</li>
+            <li>Pedidos recurrentes y contratos marco</li>
+            <li>Límites de crédito y cuentas por cobrar</li>
+            <li>Portal web B2B para autogestión de clientes</li>
+            <li>Cotizaciones convertibles a órdenes en un clic</li>
+            <li>Gestión de vendedores y comisiones</li>
+            <li>Descuentos por pronto pago y escalas de volumen</li>
+            <li>Integración total con inventario y compras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todo lo que Odoo <span class="text-gradient">puede hacer</span> por tu negocio</h2>
+        <p class="section-subtitle">Funcionalidades diseñadas para retail, mayoristas y distribuidores en Colombia que necesitan facturar electrónicamente y controlar su operación.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">📄</span>
+          <div>
+            <h4>Facturación Electrónica DIAN</h4>
+            <p>Emisión, firma digital, transmisión y recepción de FE cumpliendo resolución DIAN. CUFE automático y tracking en tiempo real.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🛒</span>
+          <div>
+            <h4>Punto de Venta (POS)</h4>
+            <p>Interfaz táctil para retail. Funciona con lector de código de barras, impresora térmica y cajón monedero. Online y offline.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🏭</span>
+          <div>
+            <h4>Múltiples Almacenes</h4>
+            <p>Gestiona bodegas, puntos de venta y dropshipping. Transferencias entre almacenes, ubicaciones y trazabilidad total.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💰</span>
+          <div>
+            <h4>Listas de Precios</h4>
+            <p>Precios por cliente, segmento, volumen y canal. Reglas de descuento automáticas y precios mínimos configurables.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📊</span>
+          <div>
+            <h4>Contabilidad NIIF Colombia</h4>
+            <p>Plan de cuentas colombiano, centros de costo, conciliación bancaria, estados financieros y reportes para entes de control.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🧾</span>
+          <div>
+            <h4>Impuestos y Retenciones</h4>
+            <p>IVA, retefuente, ICA, retención de IVA, industria y comercio. Cálculo automático y reportes para declaraciones tributarias.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📦</span>
+          <div>
+            <h4>Trazabilidad de Inventario</h4>
+            <p>Control por lote, número de serie y fecha de vencimiento. Conteos cíclicos, ajustes automáticos y valorización permanente.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📈</span>
+          <div>
+            <h4>Reportes y Dashboards</h4>
+            <p>KPIs de ventas, margen por producto, rotación de inventario, aging de cartera. Reportes personalizables en tiempo real.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">👥</span>
+          <div>
+            <h4>CRM Integrado</h4>
+            <p>Pipeline de ventas, seguimiento de oportunidades, historial de comunicaciones. Convierte leads en clientes sin fricción.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌐</span>
+          <div>
+            <h4>Portal de Clientes B2B</h4>
+            <p>Tus clientes mayoristas consultan productos, precios, hacen pedidos y descargan sus facturas electrónicas 24/7.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🛍️</span>
+          <div>
+            <h4>E-commerce Integrado</h4>
+            <p>Tienda virtual sincronizada con tu inventario y precios en tiempo real. Los pedidos web se convierten en órdenes automáticamente.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <div>
+            <h4>App Móvil Gratuita</h4>
+            <p>Gestiona ventas, inventario y clientes desde tu celular. Escanea productos, consulta precios y crea cotizaciones al instante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section section-alt" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resultados <span class="text-gradient">que se miden</span></h2>
+        <p class="section-subtitle">Las empresas que migran a Odoo Enterprise con Poliedro obtienen mejoras cuantificables en productividad, control y cumplimiento.</p>
+      </div>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <span class="beneficio-number">50%</span>
+          <span class="beneficio-label">menos tiempo administrativo</span>
+          <p>Facturación, contabilidad e inventario automatizados reducen drásticamente las horas hombre en tareas repetitivas.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">100%</span>
+          <span class="beneficio-label">inventario trazable</span>
+          <p>Cada movimiento de stock está ligado a un documento. Sabes exactamente qué, cuándo, dónde y quién en cada transacción.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">0</span>
+          <span class="beneficio-label">software externo para FE</span>
+          <p>La facturación electrónica está integrada en Odoo. No necesitas software adicional ni integraciones con terceros.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">+35%</span>
+          <span class="beneficio-label">margen operativo</span>
+          <p>Control de costos, precios inteligentes y reducción de mermas por vencimiento mejoran la rentabilidad de tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Implementación <span class="text-gradient">a tu medida</span></h2>
+        <p class="section-subtitle">Elige el modelo que mejor se adapte a tu empresa. Poliedro te acompaña desde la selección de módulos hasta el go-live y soporte continuo.</p>
+      </div>
+      <div class="planes-grid">
+        <div class="plan-card">
+          <div class="plan-icon">☁️</div>
+          <h3>Odoo como SaaS</h3>
+          <p class="plan-desc">Poliedro gestiona la infraestructura. Servidores seguros, backups diarios, actualizaciones automáticas y soporte 24/7 incluido.</p>
+          <ul class="plan-features">
+            <li>Infraestructura 100% gestionada</li>
+            <li>Actualizaciones automáticas de Odoo</li>
+            <li>Soporte 24/7 en español</li>
+            <li>Facturación electrónica incluida</li>
+          </ul>
+        </div>
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">Recomendado</div>
+          <div class="plan-icon">🏠</div>
+          <h3>Self-Hosted</h3>
+          <p class="plan-desc">Instala Odoo en tu propia infraestructura. Control total sobre datos y servidores. Ideal para empresas con requisitos de auditoría y soberanía de datos.</p>
+          <ul class="plan-features">
+            <li>Datos 100% en tus servidores</li>
+            <li>Personalización total de módulos</li>
+            <li>Integración con sistemas legados</li>
+            <li>Soporte técnico de Poliedro</li>
+          </ul>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🎓</div>
+          <h3>Acompañamiento</h3>
+          <p class="plan-desc">Consultoría, migración de datos, parametrización contable colombiana, capacitación de usuarios y acompañamiento en go-live.</p>
+          <ul class="plan-features">
+            <li>Migración desde tu ERP actual</li>
+            <li>Parametrización NIIF Colombia</li>
+            <li>Capacitación por módulos</li>
+            <li>Soporte post-implementación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="section section-alt" id="confianza">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Empresas que confían en <span class="text-gradient">Odoo</span></h2>
+        <p class="section-subtitle">Más de 12 millones de usuarios en 120 países utilizan Odoo para gestionar sus operaciones diarias.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-name">Toyota</div>
+          <div class="trust-stat">Automotriz</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Danone</div>
+          <div class="trust-stat">Alimentos</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Sodexo</div>
+          <div class="trust-stat">Servicios</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Decathlon</div>
+          <div class="trust-stat">Retail deportivo</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">L'Oréal</div>
+          <div class="trust-stat">Cosméticos</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">WWF</div>
+          <div class="trust-stat">ONG global</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container cta-container">
+      <h2 class="cta-title">¿Listo para digitalizar tu retail con Odoo Enterprise?</h2>
+      <p class="cta-subtitle">Agenda una demo personalizada con nuestros consultores. Te mostramos Odoo en acción con datos reales de tu sector.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-lg">Solicitar Demo</a>
+        <a href="#" class="btn btn-outline-white btn-lg">Hablar con un asesor</a>
+        <a href="brochure.html" class="btn btn-brochure-dark btn-lg">Descargar Brochure</a>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-item">
+          <span>📧</span> poliedrosoftware@gmail.com
+        </div>
+        <div class="cta-contact-item">
+          <span>📞</span> +57 315 7690579
+        </div>
+        <div class="cta-contact-item">
+          <span>🌐</span> poliedrosoftware.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo_poliedro.png" alt="Poliedro" class="footer-logo">
+        <p>Implementamos Odoo Enterprise con localización colombiana. Facturación electrónica, retail, inventario y contabilidad en una sola plataforma.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Módulos</h5>
+          <a href="#facturacion">Facturación Electrónica</a>
+          <a href="#retail">POS Retail</a>
+          <a href="#modulos">Inventario</a>
+          <a href="#modulos">Contabilidad</a>
+        </div>
+        <div class="footer-col">
+          <h5>Plataforma</h5>
+          <a href="#planes">Planes</a>
+          <a href="#que-es">¿Qué es Odoo?</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#confianza">Casos de éxito</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="#contacto">Demo</a>
+          <a href="#">Soporte</a>
+          <a href="#">Consultoría</a>
+          <a href="#">Poliedro</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Poliedro. Todos los derechos reservados. Odoo es una marca registrada de Odoo S.A. (Bélgica).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/573154286798" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatea por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 54.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

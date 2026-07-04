@@ -5,3 +5,24 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
+
+  nextcloud:
+    build: ./nextcloud
+    container_name: fanpage-nextcloud
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
+  odoo:
+    build: ./odoo
+    container_name: fanpage-odoo
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
+  odoo-restaurante:
+    build: ./odoo-restaurante
+    container_name: fanpage-odoo-restaurante
+    ports:
+      - "8083:80"
+    restart: unless-stopped

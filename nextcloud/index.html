@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nextcloud Enterprise | Poliedro</title>
+  <meta name="description" content="Nextcloud Enterprise: sincronización, almacenamiento y colaboración en nube privada. Desktop, móvil y web con cifrado y soberanía de datos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo_poliedro.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#que-es" class="nav-link">¿Qué es?</a>
+        <a href="#flujo" class="nav-link">Sincronización</a>
+        <a href="#features" class="nav-link">Características</a>
+        <a href="#ecosistema" class="nav-link">Ecosistema</a>
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#planes" class="nav-link">Planes</a>
+      </div>
+      <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Nextcloud Enterprise</span>
+        </div>
+        <h1 class="hero-title">
+          Tu nube privada, <span class="text-gradient">tu control total</span>
+        </h1>
+        <p class="hero-subtitle">
+          Nextcloud es la plataforma de colaboración y almacenamiento en nube privada más segura del mundo.
+          Sincroniza archivos entre tu escritorio, móvil y servidor con soberanía total sobre tus datos.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una demo gratuita</a>
+          <a href="brochure.html" class="btn btn-outline btn-lg">Descargar Brochure</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">250K+</span>
+            <span class="hero-stat-label">Servidores activos</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">100M+</span>
+            <span class="hero-stat-label">Usuarios globales</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">30+</span>
+            <span class="hero-stat-label">Idiomas</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="hero-card-title">Nextcloud Files</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="hero-file-row">
+              <div class="hero-file-icon hero-file-folder"></div>
+              <div class="hero-file-info">
+                <span class="hero-file-name">Proyectos 2026</span>
+                <span class="hero-file-meta">12 archivos · Hoy</span>
+              </div>
+            </div>
+            <div class="hero-file-row">
+              <div class="hero-file-icon hero-file-pdf"></div>
+              <div class="hero-file-info">
+                <span class="hero-file-name">Informe_Gestion_Q1.pdf</span>
+                <span class="hero-file-meta">2.4 MB · Ayer</span>
+              </div>
+            </div>
+            <div class="hero-file-row">
+              <div class="hero-file-icon hero-file-img"></div>
+              <div class="hero-file-info">
+                <span class="hero-file-name">Fotos_Evento.zip</span>
+                <span class="hero-file-meta">48 MB · 3 días</span>
+              </div>
+            </div>
+            <div class="hero-file-row">
+              <div class="hero-file-icon hero-file-sheet"></div>
+              <div class="hero-file-info">
+                <span class="hero-file-name">Presupuesto_2026.xlsx</span>
+                <span class="hero-file-meta">856 KB · 1 semana</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-sync-bar">
+            <div class="hero-sync-dot"></div>
+            <span>Sincronización activa — 3 dispositivos conectados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES NEXTCLOUD? -->
+  <section class="section" id="que-es">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué es <span class="text-gradient">Nextcloud</span>?</h2>
+        <p class="section-subtitle">Una plataforma de código abierto que te permite tener tu propio servicio de nube privada, con todas las funcionalidades de Dropbox, Google Drive y Office 365, pero con soberanía total sobre tus datos.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon card-icon-blue">🔒</div>
+          <h3 class="card-title">Almacenamiento Privado</h3>
+          <p class="card-text">Tus archivos residen en tus servidores o en infraestructura gestionada por Poliedro. Nadie más puede acceder a ellos. Cumple con GDPR, HIPAA y regulaciones locales de protección de datos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-teal">🔄</div>
+          <h3 class="card-title">Sincronización Total</h3>
+          <p class="card-text">Archivos siempre actualizados en tu escritorio (Windows, Mac, Linux), tu móvil (iOS, Android) y la web. Trabaja offline y sincroniza al reconectarte automáticamente.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-dark">🤝</div>
+          <h3 class="card-title">Colaboración Segura</h3>
+          <p class="card-text">Comparte carpetas y archivos con enlaces protegidos por contraseña y fecha de caducidad. Edita documentos en tiempo real con Collabora Online integrado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA DE SINCRONIZACIÓN -->
+  <section class="section section-alt" id="flujo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sincronización <span class="text-gradient">en todas partes</span></h2>
+        <p class="section-subtitle">Nextcloud mantiene tus archivos sincronizados y accesibles desde cualquier dispositivo, en cualquier momento, incluso sin conexión.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <marker id="arrowSync" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#0072a1"/>
+            </marker>
+            <marker id="arrowSyncBack" markerWidth="8" markerHeight="6" refX="1" refY="3" orient="auto">
+              <polygon points="8 0, 0 3, 8 6" fill="#51bbe3"/>
+            </marker>
+            <filter id="shadowDevice"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.12"/></filter>
+            <filter id="shadowServer"><feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.2"/></filter>
+            <linearGradient id="gradServer" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#2d97bf"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Título del diagrama -->
+          <text x="550" y="30" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="700" fill="#1e293b">Arquitectura de Sincronización Nextcloud</text>
+
+          <!-- Servidor Central -->
+          <rect x="410" y="180" width="280" height="150" rx="16" fill="white" stroke="#0072a1" stroke-width="2.5" filter="url(#shadowServer)"/>
+          <rect x="410" y="180" width="280" height="34" rx="16" fill="url(#gradServer)"/>
+          <rect x="410" y="198" width="280" height="16" fill="url(#gradServer)"/>
+          <text x="550" y="203" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="white">🖥️ Servidor Nextcloud</text>
+          <text x="550" y="235" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#475569">Almacenamiento centralizado</text>
+          <text x="550" y="255" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Archivos · Calendarios · Contactos · Tareas</text>
+          <text x="550" y="275" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Cifrado en reposo y en tránsito</text>
+          <text x="550" y="295" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Versionado automático de archivos</text>
+          <text x="550" y="315" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Respaldo incremental diario</text>
+
+          <!-- Desktop -->
+          <rect x="60" y="80" width="200" height="120" rx="14" fill="white" stroke="#e2e8f0" filter="url(#shadowDevice)"/>
+          <text x="160" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="28">💻</text>
+          <text x="160" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Desktop Client</text>
+          <text x="160" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Windows · macOS · Linux</text>
+          <text x="160" y="178" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Sincronización selectiva</text>
+          <text x="160" y="193" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Explorador de archivos integrado</text>
+
+          <!-- Móvil -->
+          <rect x="840" y="80" width="200" height="120" rx="14" fill="white" stroke="#e2e8f0" filter="url(#shadowDevice)"/>
+          <text x="940" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="28">📱</text>
+          <text x="940" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Mobile App</text>
+          <text x="940" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">iOS · Android</text>
+          <text x="940" y="178" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Subida automática de fotos</text>
+          <text x="940" y="193" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Acceso offline a archivos</text>
+
+          <!-- Web Browser -->
+          <rect x="60" y="360" width="200" height="120" rx="14" fill="white" stroke="#e2e8f0" filter="url(#shadowDevice)"/>
+          <text x="160" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="28">🌐</text>
+          <text x="160" y="420" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Navegador Web</text>
+          <text x="160" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Chrome · Firefox · Edge · Safari</text>
+          <text x="160" y="458" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Arrastrar y soltar archivos</text>
+          <text x="160" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Acceso desde cualquier lugar</text>
+
+          <!-- External Storage -->
+          <rect x="840" y="360" width="200" height="120" rx="14" fill="white" stroke="#e2e8f0" filter="url(#shadowDevice)"/>
+          <text x="940" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="28">☁️</text>
+          <text x="940" y="420" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Storage Externo</text>
+          <text x="940" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">S3 · FTP · NFS · SharePoint</text>
+          <text x="940" y="458" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Montaje como carpeta local</text>
+          <text x="940" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Compatibilidad con SMB/CIFS</text>
+
+          <!-- Flechas -->
+          <line x1="240" y1="200" x2="410" y2="235" stroke="#0072a1" stroke-width="2.5" marker-end="url(#arrowSync)"/>
+          <line x1="400" y1="265" x2="250" y2="230" stroke="#51bbe3" stroke-width="2" marker-end="url(#arrowSyncBack)"/>
+
+          <line x1="690" y1="235" x2="840" y2="170" stroke="#0072a1" stroke-width="2.5" marker-end="url(#arrowSync)"/>
+          <line x1="850" y1="195" x2="700" y2="255" stroke="#51bbe3" stroke-width="2" marker-end="url(#arrowSyncBack)"/>
+
+          <line x1="280" y1="260" x2="410" y2="305" stroke="#0072a1" stroke-width="2.5" marker-end="url(#arrowSync)"/>
+          <line x1="400" y1="310" x2="260" y2="300" stroke="#51bbe3" stroke-width="2" marker-end="url(#arrowSyncBack)"/>
+
+          <line x1="690" y1="305" x2="840" y2="395" stroke="#0072a1" stroke-width="2.5" marker-end="url(#arrowSync)"/>
+          <line x1="850" y1="390" x2="700" y2="300" stroke="#51bbe3" stroke-width="2" marker-end="url(#arrowSyncBack)"/>
+
+          <!-- Leyenda -->
+          <rect x="410" y="450" width="28" height="4" rx="2" fill="#0072a1"/>
+          <text x="445" y="456" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Sincronización subida</text>
+          <rect x="555" y="450" width="28" height="4" rx="2" fill="#51bbe3"/>
+          <text x="590" y="456" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Sincronización descarga</text>
+          <text x="550" y="482" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0072a1">Todos los cambios se propagan en segundos entre dispositivos</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todo lo que Nextcloud <span class="text-gradient">puede hacer</span></h2>
+        <p class="section-subtitle">Funcionalidades que transforman la forma en que tu organización almacena, comparte y colabora con archivos.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">💻</span>
+          <div>
+            <h4>Desktop Client</h4>
+            <p>Cliente de sincronización nativo para Windows, macOS y Linux. Arrastra archivos a tu carpeta local y se sincronizan al instante.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <div>
+            <h4>App Móvil</h4>
+            <p>Accede, sube y comparte archivos desde iOS y Android. Subida automática de fotos y videos. Disponible offline.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌐</span>
+          <div>
+            <h4>Acceso Web</h4>
+            <p>Interfaz web completa desde cualquier navegador. Arrastra y suelta archivos, previsualiza documentos y gestiona permisos.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔗</span>
+          <div>
+            <h4>Compartición Segura</h4>
+            <p>Enlaces protegidos con contraseña, fecha de expiración y permisos granulares. Comparte internamente o con externos.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⏪</span>
+          <div>
+            <h4>Versionado de Archivos</h4>
+            <p>Cada modificación genera una versión. Recupera cualquier estado anterior de un archivo en segundos. Historial completo.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔐</span>
+          <div>
+            <h4>Cifrado E2E</h4>
+            <p>Cifrado de extremo a extremo en carpetas sensibles. Ni siquiera el administrador del servidor puede acceder sin tu clave.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📝</span>
+          <div>
+            <h4>Collabora Online</h4>
+            <p>Edita documentos, hojas de cálculo y presentaciones en tiempo real con tu equipo, directamente desde el navegador.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📅</span>
+          <div>
+            <h4>Calendario y Contactos</h4>
+            <p>Sincroniza calendarios, contactos y tareas entre todos tus dispositivos mediante CalDAV y CardDAV.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📊</span>
+          <div>
+            <h4>Dashboard Personalizable</h4>
+            <p>Widgets de clima, correo, noticias, tareas y más. Cada usuario configura su panel de inicio a su medida.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">👥</span>
+          <div>
+            <h4>Control de Acceso</h4>
+            <p>Permisos granulares por usuario, grupo o carpeta. Integración con LDAP, Active Directory y SAML/OIDC.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📋</span>
+          <div>
+            <h4>Auditoría y Logs</h4>
+            <p>Registro completo de cada acción: quién accedió, qué modificó y cuándo. Cumplimiento normativo garantizado.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔌</span>
+          <div>
+            <h4>API REST y WebDAV</h4>
+            <p>Integra Nextcloud con tus sistemas existentes. API documentada, WebDAV para acceso remoto y cientos de apps en el marketplace.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSISTEMA NEXTCLOUD -->
+  <section class="section section-alt" id="ecosistema">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ecosistema <span class="text-gradient">Nextcloud</span></h2>
+        <p class="section-subtitle">Una plataforma abierta que se integra con tus herramientas existentes y se expande con cientos de aplicaciones.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 580" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <filter id="shNode"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.1"/></filter>
+            <filter id="shCenter"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-opacity="0.25"/></filter>
+            <linearGradient id="gcNextcloud" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#2d97bf"/>
+            </linearGradient>
+            <linearGradient id="gcFiles" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#2563eb"/>
+            </linearGradient>
+            <linearGradient id="gcOffice" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#6d28d9"/>
+            </linearGradient>
+            <linearGradient id="gcTalk" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/>
+            </linearGradient>
+            <linearGradient id="gcMail" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+            <linearGradient id="gcSec" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#b91c1c"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Centro -->
+          <circle cx="550" cy="290" r="70" fill="url(#gcNextcloud)" filter="url(#shCenter)"/>
+          <text x="550" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="white">Nextcloud</text>
+          <text x="550" y="302" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.8)">Hub</text>
+
+          <!-- Nodos alrededor -->
+          <!-- 1. Nextcloud Files -->
+          <rect x="60" y="55" width="190" height="85" rx="14" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shNode)"/>
+          <rect x="60" y="55" width="190" height="28" rx="14" fill="url(#gcFiles)"/>
+          <rect x="60" y="69" width="190" height="14" fill="url(#gcFiles)"/>
+          <text x="155" y="75" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📁 Nextcloud Files</text>
+          <text x="155" y="102" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Sincronización y</text>
+          <text x="155" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">compartición de archivos</text>
+          <text x="155" y="134" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Desktop + Móvil + Web</text>
+          <line x1="210" y1="105" x2="490" y2="255" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 2. Collabora Online -->
+          <rect x="455" y="40" width="190" height="85" rx="14" fill="white" stroke="#8b5cf6" stroke-width="2" filter="url(#shNode)"/>
+          <rect x="455" y="40" width="190" height="28" rx="14" fill="url(#gcOffice)"/>
+          <rect x="455" y="54" width="190" height="14" fill="url(#gcOffice)"/>
+          <text x="550" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📝 Collabora Online</text>
+          <text x="550" y="87" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Edición colaborativa</text>
+          <text x="550" y="103" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Documentos · Hojas · PPT</text>
+          <text x="550" y="119" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">En tiempo real</text>
+          <line x1="550" y1="125" x2="550" y2="220" stroke="#8b5cf6" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 3. Nextcloud Talk -->
+          <rect x="850" y="55" width="190" height="85" rx="14" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shNode)"/>
+          <rect x="850" y="55" width="190" height="28" rx="14" fill="url(#gcTalk)"/>
+          <rect x="850" y="69" width="190" height="14" fill="url(#gcTalk)"/>
+          <text x="945" y="75" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">💬 Nextcloud Talk</text>
+          <text x="945" y="102" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Videollamadas y chat</text>
+          <text x="945" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">WebRTC cifrado</text>
+          <text x="945" y="134" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Compartir pantalla</text>
+          <line x1="890" y1="105" x2="610" y2="255" stroke="#10b981" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 4. Nextcloud Mail -->
+          <rect x="850" y="440" width="190" height="85" rx="14" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shNode)"/>
+          <rect x="850" y="440" width="190" height="28" rx="14" fill="url(#gcMail)"/>
+          <rect x="850" y="454" width="190" height="14" fill="url(#gcMail)"/>
+          <text x="945" y="460" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">📧 Nextcloud Mail</text>
+          <text x="945" y="487" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Cliente de correo</text>
+          <text x="945" y="503" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">integrado en la web</text>
+          <text x="945" y="519" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">IMAP/SMTP</text>
+          <line x1="890" y1="470" x2="610" y2="325" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 5. Seguridad -->
+          <rect x="455" y="460" width="190" height="85" rx="14" fill="white" stroke="#ef4444" stroke-width="2" filter="url(#shNode)"/>
+          <rect x="455" y="460" width="190" height="28" rx="14" fill="url(#gcSec)"/>
+          <rect x="455" y="474" width="190" height="14" fill="url(#gcSec)"/>
+          <text x="550" y="480" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">🔒 Seguridad</text>
+          <text x="550" y="507" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Cifrado E2E · MFA · SSO</text>
+          <text x="550" y="523" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">GDPR · HIPAA · ISO 27001</text>
+          <text x="550" y="539" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Auditoría completa</text>
+          <line x1="550" y1="460" x2="550" y2="360" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- 6. External Storage -->
+          <rect x="60" y="440" width="190" height="85" rx="14" fill="white" stroke="#64748b" stroke-width="2" filter="url(#shNode)"/>
+          <rect x="60" y="440" width="190" height="28" rx="14" fill="#64748b"/>
+          <rect x="60" y="454" width="190" height="14" fill="#64748b"/>
+          <text x="155" y="460" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">🔗 Storage Externo</text>
+          <text x="155" y="487" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">S3 · FTP · NFS · SMB</text>
+          <text x="155" y="503" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">SharePoint · Windows</text>
+          <text x="155" y="519" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Network Drive</text>
+          <line x1="210" y1="470" x2="490" y2="325" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Apps externas -->
+          <rect x="60" y="250" width="155" height="65" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shNode)"/>
+          <text x="138" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1e293b">📅 Calendario</text>
+          <text x="138" y="298" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">CalDAV · Sincronizado</text>
+          <line x1="210" y1="282" x2="484" y2="272" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+          <rect x="885" y="250" width="155" height="65" rx="12" fill="white" stroke="#e2e8f0" filter="url(#shNode)"/>
+          <text x="963" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1e293b">✅ Tareas</text>
+          <text x="963" y="298" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Deck · Kanban</text>
+          <line x1="885" y1="282" x2="616" y2="272" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+          <!-- Etiqueta -->
+          <rect x="430" y="550" width="240" height="22" rx="11" fill="rgba(0,114,161,0.08)"/>
+          <text x="550" y="565" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0072a1">+300 apps en el marketplace · 100% Open Source</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resultados <span class="text-gradient">que se miden</span></h2>
+        <p class="section-subtitle">Nextcloud transforma la productividad y seguridad de tu organización con beneficios cuantificables desde el primer día.</p>
+      </div>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <span class="beneficio-number">60%</span>
+          <span class="beneficio-label">menos costos que la nube pública</span>
+          <p>Reduce drásticamente el gasto en licencias por usuario frente a alternativas como Google Workspace o Microsoft 365.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">100%</span>
+          <span class="beneficio-label">soberanía sobre los datos</span>
+          <p>Tus archivos nunca abandonan tu infraestructura. Tú decides dónde se almacenan y quién puede acceder a ellos.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">3x</span>
+          <span class="beneficio-label">más productividad en equipos</span>
+          <p>Colaboración en tiempo real, acceso offline y sincronización instantánea eliminan las barreras entre tu equipo.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">99.9%</span>
+          <span class="beneficio-label">disponibilidad garantizada</span>
+          <p>Alta disponibilidad con balanceo de carga y replicación. Tus archivos siempre accesibles cuando los necesitas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section section-alt" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Implementación <span class="text-gradient">a tu medida</span></h2>
+        <p class="section-subtitle">Elige el modelo que mejor se adapte a tu organización. Poliedro te acompaña desde la instalación hasta el soporte continuo.</p>
+      </div>
+      <div class="planes-grid">
+        <div class="plan-card">
+          <div class="plan-icon">☁️</div>
+          <h3>Nextcloud como SaaS</h3>
+          <p class="plan-desc">Poliedro gestiona la infraestructura por ti. Hosting seguro, actualizaciones automáticas y soporte 24/7. Tú solo te enfocas en usar la plataforma.</p>
+          <ul class="plan-features">
+            <li>Infraestructura gestionada 100%</li>
+            <li>Actualizaciones automáticas</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Backups diarios incluidos</li>
+          </ul>
+        </div>
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">Recomendado</div>
+          <div class="plan-icon">🏠</div>
+          <h3>Self-Hosted</h3>
+          <p class="plan-desc">Instala Nextcloud en tu propia infraestructura. Control total sobre hardware, datos y configuraciones. Ideal para entidades con requisitos de soberanía estrictos.</p>
+          <ul class="plan-features">
+            <li>Datos 100% en tus servidores</li>
+            <li>Personalización total</li>
+            <li>Integración con LDAP/AD/SAML</li>
+            <li>Soporte profesional de Poliedro</li>
+          </ul>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🎓</div>
+          <h3>Acompañamiento</h3>
+          <p class="plan-desc">Consultoría, migración desde tu nube actual, configuración avanzada, capacitación de usuarios y administradores. Te guiamos de principio a fin.</p>
+          <ul class="plan-features">
+            <li>Migración desde Google Drive/Dropbox</li>
+            <li>Configuración personalizada</li>
+            <li>Capacitación de equipos</li>
+            <li>Soporte post-implementación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="section" id="confianza">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Confían en <span class="text-gradient">Nextcloud</span></h2>
+        <p class="section-subtitle">Gobiernos, universidades, empresas fortune 500 y ONGs en todo el mundo eligen Nextcloud para su nube privada.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-name">Gobierno de Alemania</div>
+          <div class="trust-stat">Nube soberana federal</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">CERN</div>
+          <div class="trust-stat">Investigación científica</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Universidad de Harvard</div>
+          <div class="trust-stat">Educación superior</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Siemens</div>
+          <div class="trust-stat">Fortune 500</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Unión Europea</div>
+          <div class="trust-stat">Sector público</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Agencia Espacial Francesa</div>
+          <div class="trust-stat">Aeroespacial</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container cta-container">
+      <h2 class="cta-title">¿Listo para tener tu propia nube privada?</h2>
+      <p class="cta-subtitle">Agenda una demo personalizada con nuestros expertos. Te mostramos cómo Nextcloud puede transformar la colaboración en tu organización.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-lg">Solicitar Demo</a>
+        <a href="#" class="btn btn-outline-white btn-lg">Hablar con un asesor</a>
+        <a href="brochure.html" class="btn btn-brochure-dark btn-lg">Descargar Brochure</a>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-item">
+          <span>📧</span> poliedrosoftware@gmail.com
+        </div>
+        <div class="cta-contact-item">
+          <span>📞</span> +57 315 7690579
+        </div>
+        <div class="cta-contact-item">
+          <span>🌐</span> poliedrosoftware.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo_poliedro.png" alt="Poliedro" class="footer-logo">
+        <p>Implementamos Nextcloud Enterprise con tecnología de código abierto, segura y centrada en la soberanía de tus datos.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Plataforma</h5>
+          <a href="#que-es">¿Qué es Nextcloud?</a>
+          <a href="#flujo">Sincronización</a>
+          <a href="#features">Características</a>
+          <a href="#ecosistema">Ecosistema</a>
+        </div>
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <a href="#planes">Planes</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#confianza">Casos de éxito</a>
+          <a href="#">Documentación</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="#">Demo</a>
+          <a href="#">Soporte</a>
+          <a href="#">Consultoría</a>
+          <a href="#">Poliedro</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Poliedro. Todos los derechos reservados. Nextcloud es una marca registrada de Nextcloud GmbH.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/573154286798" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatea por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 54.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

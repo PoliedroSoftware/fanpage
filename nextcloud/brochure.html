@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure Nextcloud Enterprise — Poliedro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #0072a1;
+      --primary-dark: #06506d;
+      --primary-light: #2d97bf;
+      --accent: #51bbe3;
+      --navy: #183146;
+      --navy-dark: #0f1e2d;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-500: #64748b;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      page-break-after: always;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { box-shadow: none; margin: 0; width: auto; min-height: auto; }
+      .no-print { display: none; }
+    }
+
+    @media screen {
+      body { background: #e2e8f0; }
+      .page {
+        background: white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        margin: 20px auto;
+      }
+    }
+
+    /* ===== PORTADA ===== */
+    .cover {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 40%, var(--primary-dark) 100%);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(0,114,161,0.3) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(81,187,227,0.2) 0%, transparent 60%);
+    }
+
+    .cover-content { position: relative; z-index: 1; }
+
+    .cover-logo { height: 55px; width: auto; margin-bottom: 60px; filter: brightness(0) invert(1); }
+
+    .cover-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 24px;
+      letter-spacing: 0.03em;
+    }
+
+    .cover h1 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .cover h1 span {
+      background: linear-gradient(135deg, var(--accent), #69b8df);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cover p {
+      font-size: 18px;
+      opacity: 0.8;
+      line-height: 1.7;
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+
+    .cover-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .cover-feat {
+      padding: 16px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .cover-feat-icon { font-size: 28px; margin-bottom: 8px; }
+    .cover-feat-label { font-size: 12px; font-weight: 600; opacity: 0.85; }
+
+    /* ===== PÁGINAS INTERIORES ===== */
+    .inner {
+      padding: 50px 50px 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .inner-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .inner-header-line {
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 2px;
+    }
+
+    .inner-header span {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+    }
+
+    .inner h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .inner h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 6px;
+    }
+
+    .inner p, .inner li {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.65;
+    }
+
+    .inner-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .inner-grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .inner-card {
+      background: var(--gray-100);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .inner-card-icon { font-size: 24px; margin-bottom: 8px; }
+
+    .feature-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .feature-list li {
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .benefits-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .benefit-box {
+      background: linear-gradient(135deg, rgba(0,114,161,0.05) 0%, rgba(81,187,227,0.08) 100%);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+      border: 1px solid rgba(0,114,161,0.1);
+    }
+
+    .benefit-number {
+      font-size: 36px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .benefit-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .sync-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+
+    .sync-node {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      min-width: 120px;
+    }
+
+    .sync-node-icon { font-size: 32px; margin-bottom: 6px; }
+    .sync-node-label { font-size: 13px; font-weight: 700; color: var(--gray-800); }
+    .sync-arrow { font-size: 24px; color: var(--primary); }
+
+    .sync-server {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+    }
+
+    .sync-server .sync-node-label { color: white; }
+
+    .contact-section {
+      background: var(--gray-100);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--gray-700);
+    }
+
+    .page-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--gray-500);
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .download-bar {
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PORTADA -->
+  <div class="page cover">
+    <div class="cover-content">
+      <img src="logo_poliedro.png" alt="Poliedro" class="cover-logo">
+      <div class="cover-badge">Nextcloud Enterprise</div>
+      <h1>Tu nube privada,<br><span>tu control total</span></h1>
+      <p>Sincronización, almacenamiento y colaboración en nube privada con soberanía total sobre tus datos. La alternativa open source a Google Drive, Dropbox y Office 365.</p>
+      <div class="cover-features">
+        <div class="cover-feat">
+          <div class="cover-feat-icon">🔄</div>
+          <div class="cover-feat-label">Sincronización multiplataforma</div>
+        </div>
+        <div class="cover-feat">
+          <div class="cover-feat-icon">🔒</div>
+          <div class="cover-feat-label">Cifrado extremo a extremo</div>
+        </div>
+        <div class="cover-feat">
+          <div class="cover-feat-icon">🤝</div>
+          <div class="cover-feat-label">Colaboración en tiempo real</div>
+        </div>
+        <div class="cover-feat">
+          <div class="cover-feat-icon">🏠</div>
+          <div class="cover-feat-label">100% soberanía de datos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 2: ¿Qué es Nextcloud? -->
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Nextcloud Enterprise</span></div>
+    <h2>¿Qué es Nextcloud?</h2>
+    <p style="margin-bottom:20px;">Nextcloud es la plataforma de código abierto líder mundial para nube privada. Ofrece todas las funcionalidades de Dropbox, Google Drive y Office 365 combinadas en una sola plataforma que tú controlas. Tus archivos residen en tus servidores, con las máximas garantías de seguridad, privacidad y cumplimiento normativo.</p>
+
+    <div class="inner-grid-3">
+      <div class="inner-card">
+        <div class="inner-card-icon">💻</div>
+        <h3>Desktop Client</h3>
+        <p>Sincronización nativa para Windows, macOS y Linux. Archivos siempre disponibles en tu explorador, incluso sin conexión a internet.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">📱</div>
+        <h3>App Móvil</h3>
+        <p>iOS y Android. Subida automática de fotos, acceso offline, compartición instantánea. Tus archivos siempre en tu bolsillo.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">🌐</div>
+        <h3>Acceso Web</h3>
+        <p>Interfaz completa desde cualquier navegador. Arrastra y suelta archivos, edita documentos y gestiona permisos.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <div class="inner-header"><div class="inner-header-line"></div><span>Arquitectura de Sincronización</span></div>
+      <div class="sync-flow">
+        <div class="sync-node">
+          <div class="sync-node-icon">💻</div>
+          <div class="sync-node-label">Escritorio</div>
+        </div>
+        <div class="sync-arrow">⇄</div>
+        <div class="sync-node sync-server">
+          <div class="sync-node-icon">🖥️</div>
+          <div class="sync-node-label">Nextcloud</div>
+        </div>
+        <div class="sync-arrow">⇄</div>
+        <div class="sync-node">
+          <div class="sync-node-icon">📱</div>
+          <div class="sync-node-label">Móvil / Tablet</div>
+        </div>
+        <div class="sync-arrow">⇄</div>
+        <div class="sync-node">
+          <div class="sync-node-icon">🌐</div>
+          <div class="sync-node-label">Web</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Poliedro — Nextcloud Enterprise</span>
+      <span>poliedrosoftware.com</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 3: Características -->
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Características</span></div>
+    <h2>Todo lo que Nextcloud puede hacer por tu organización</h2>
+
+    <ul class="feature-list">
+      <li><strong>Sincronización selectiva:</strong> elige qué carpetas sincronizar en cada dispositivo.</li>
+      <li><strong>Compartición segura:</strong> enlaces con contraseña, fecha de expiración y permisos granulares.</li>
+      <li><strong>Versionado ilimitado:</strong> recupera cualquier versión anterior de un archivo.</li>
+      <li><strong>Cifrado E2E:</strong> carpetas con cifrado de extremo a extremo.</li>
+      <li><strong>Collabora Online:</strong> edita documentos, hojas de cálculo y presentaciones en equipo.</li>
+      <li><strong>Calendario y Contactos:</strong> sincronización CalDAV/CardDAV en todos tus dispositivos.</li>
+      <li><strong>Nextcloud Talk:</strong> videollamadas, chat y compartir pantalla cifrados.</li>
+      <li><strong>Nextcloud Mail:</strong> cliente de correo integrado en la interfaz web.</li>
+      <li><strong>Dashboard personalizable:</strong> widgets de clima, correo, tareas y más.</li>
+      <li><strong>LDAP / Active Directory:</strong> integración con tu directorio corporativo.</li>
+      <li><strong>SAML / OIDC / MFA:</strong> autenticación empresarial segura.</li>
+      <li><strong>External Storage:</strong> monta S3, FTP, NFS, SharePoint como carpetas locales.</li>
+      <li><strong>API REST y WebDAV:</strong> integración con tus sistemas existentes.</li>
+      <li><strong>Flujo de trabajo y automatizaciones:</strong> reglas para aprobaciones, notificaciones y más.</li>
+      <li><strong>Auditoría completa:</strong> registro de cada acceso, modificación y compartición.</li>
+      <li><strong>Marketplace de apps:</strong> +300 aplicaciones para extender funcionalidades.</li>
+    </ul>
+
+    <div class="benefits-row" style="margin-top:24px;">
+      <div class="benefit-box">
+        <div class="benefit-number">60%</div>
+        <div class="benefit-label">menos costos que nube pública</div>
+      </div>
+      <div class="benefit-box">
+        <div class="benefit-number">100%</div>
+        <div class="benefit-label">soberanía sobre los datos</div>
+      </div>
+      <div class="benefit-box">
+        <div class="benefit-number">3x</div>
+        <div class="benefit-label">más productividad</div>
+      </div>
+      <div class="benefit-box">
+        <div class="benefit-number">99.9%</div>
+        <div class="benefit-label">disponibilidad</div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Poliedro — Nextcloud Enterprise</span>
+      <span>poliedrosoftware.com</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 4: Planes y Contacto -->
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Planes</span></div>
+    <h2>Implementación a tu medida</h2>
+
+    <div class="inner-grid-3">
+      <div class="inner-card">
+        <div class="inner-card-icon">☁️</div>
+        <h3>SaaS</h3>
+        <p>Infraestructura gestionada por Poliedro. Sin preocupaciones de servidores ni mantenimiento. Actualizaciones automáticas y soporte 24/7.</p>
+      </div>
+      <div class="inner-card" style="border:2px solid var(--accent);">
+        <div class="inner-card-icon">🏠</div>
+        <h3>Self-Hosted ★</h3>
+        <p>Instalación en tu propia infraestructura. Control total sobre hardware y datos. Ideal para entidades gubernamentales con requisitos estrictos de soberanía.</p>
+      </div>
+      <div class="inner-card">
+        <div class="inner-card-icon">🎓</div>
+        <h3>Acompañamiento</h3>
+        <p>Consultoría, migración, configuración avanzada y capacitación. Te guiamos en cada paso para una adopción exitosa.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;">
+      <div class="inner-header"><div class="inner-header-line"></div><span>Confianza Global</span></div>
+      <p style="margin-bottom:16px;">Gobiernos, universidades, empresas Fortune 500 y ONGs en todo el mundo confían en Nextcloud para su nube privada.</p>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+        <div class="inner-card" style="text-align:center;padding:14px;"><strong>Gobierno de Alemania</strong><br><span style="font-size:11px;color:var(--gray-500);">Nube federal</span></div>
+        <div class="inner-card" style="text-align:center;padding:14px;"><strong>CERN</strong><br><span style="font-size:11px;color:var(--gray-500);">Investigación</span></div>
+        <div class="inner-card" style="text-align:center;padding:14px;"><strong>Siemens</strong><br><span style="font-size:11px;color:var(--gray-500);">Fortune 500</span></div>
+        <div class="inner-card" style="text-align:center;padding:14px;"><strong>Unión Europea</strong><br><span style="font-size:11px;color:var(--gray-500);">Sector público</span></div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h3 style="text-align:center;margin-bottom:16px;">Contáctanos</h3>
+      <div class="contact-row">
+        <div class="contact-item">📧 poliedrosoftware@gmail.com</div>
+        <div class="contact-item">📞 +57 315 7690579</div>
+        <div class="contact-item">🌐 poliedrosoftware.com</div>
+        <div class="contact-item">💬 WhatsApp +57 315 4286798</div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>&copy; 2026 Poliedro. Todos los derechos reservados.</span>
+      <span>Nextcloud es marca registrada de Nextcloud GmbH.</span>
+    </div>
+  </div>
+
+  <div class="download-bar no-print">
+    <a href="brochure.html" download class="download-btn">Descargar como PDF</a>
+    <p style="margin-top:8px;font-size:12px;color:var(--gray-500);">También puedes imprimir esta página (Ctrl+P) y guardar como PDF.</p>
+  </div>
+
+</body>
+</html>

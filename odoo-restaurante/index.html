@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odoo Restaurant Enterprise | POS, Cocina, Inventario y Contabilidad | Poliedro</title>
+  <meta name="description" content="Odoo Restaurant Enterprise: POS táctil con gestión de mesas, Kitchen Display, control de inventario de ingredientes, recetas y costeo, facturación electrónica DIAN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo_poliedro.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#que-es" class="nav-link">¿Qué es?</a>
+        <a href="#flujo" class="nav-link">Flujo</a>
+        <a href="#pos" class="nav-link">POS y Salón</a>
+        <a href="#cocina" class="nav-link">Cocina</a>
+        <a href="#inventario" class="nav-link">Inventario</a>
+        <a href="#planes" class="nav-link">Planes</a>
+      </div>
+      <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Odoo Restaurant Colombia</span>
+        </div>
+        <h1 class="hero-title">
+          El ERP que transforma tu restaurante: <span class="text-gradient">del salón a la cocina</span> en tiempo real
+        </h1>
+        <p class="hero-subtitle">
+          POS táctil con gestión de mesas, Kitchen Display para la cocina, control de inventario de ingredientes, recetas, costeo de platos y facturación electrónica DIAN. Todo integrado en Odoo Enterprise.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una demo gratuita</a>
+          <a href="brochure.html" class="btn btn-outline btn-lg">Descargar Brochure</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">50K+</span>
+            <span class="hero-stat-label">Restaurantes activos</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">5M+</span>
+            <span class="hero-stat-label">Pedidos diarios</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">24/7</span>
+            <span class="hero-stat-label">Soporte en español</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card resto-dash">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="hero-card-title">POS Restaurant — Salón Principal</span>
+          </div>
+          <div class="hero-card-body resto-salon-mini">
+            <div class="resto-salon-grid">
+              <div class="resto-mesa resto-mesa-libre"></div>
+              <div class="resto-mesa resto-mesa-ocupada"></div>
+              <div class="resto-mesa resto-mesa-libre"></div>
+              <div class="resto-mesa resto-mesa-pagar"></div>
+              <div class="resto-mesa resto-mesa-reservada"></div>
+              <div class="resto-mesa resto-mesa-libre"></div>
+              <div class="resto-mesa resto-mesa-ocupada"></div>
+              <div class="resto-mesa resto-mesa-libre"></div>
+              <div class="resto-mesa resto-mesa-reservada"></div>
+            </div>
+            <div class="resto-orden-activa">
+              <div class="resto-orden-header">Mesa 4 — Orden #287</div>
+              <div class="resto-orden-item"><span>🍕 Pizza Margarita</span><span class="resto-qty">x1</span></div>
+              <div class="resto-orden-item"><span>🥗 César con Pollo</span><span class="resto-qty">x2</span></div>
+              <div class="resto-orden-item"><span>🍹 Limonada Natural</span><span class="resto-qty">x3</span></div>
+              <div class="resto-orden-total">Total: $78.500</div>
+            </div>
+          </div>
+          <div class="hero-sync-bar">
+            <div class="hero-sync-dot"></div>
+            <span>Órdenes sincronizadas con cocina en tiempo real</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES ODOO RESTAURANT? -->
+  <section class="section" id="que-es">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué es <span class="text-gradient">Odoo Restaurant</span>?</h2>
+        <p class="section-subtitle">La solución integral para restaurantes, bares y cafeterías: desde que el cliente se sienta hasta que se contabiliza la factura electrónica. Todo conectado, en tiempo real, sin papeles.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon card-icon-blue">🍽️</div>
+          <h3 class="card-title">POS Inteligente</h3>
+          <p class="card-text">Tablet táctil en cada mesero. Gestión visual de mesas, división de cuenta, propinas, múltiples métodos de pago. El cliente pide y la cocina lo ve al instante sin que nadie corra con un papel.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-teal">👨‍🍳</div>
+          <h3 class="card-title">Cocina Conectada</h3>
+          <p class="card-text">Kitchen Display System (KDS) con pantalla en la cocina. Las órdenes aparecen priorizadas por tiempo, con modificadores y notas. Se acabaron los tickets de papel extraviados.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-dark">📊</div>
+          <h3 class="card-title">Control Total del Negocio</h3>
+          <p class="card-text">Inventario de ingredientes en tiempo real, costeo automático por plato, mermas y caducidades, contabilidad NIIF Colombia y facturación electrónica DIAN integrada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLUJO DEL RESTAURANTE -->
+  <section class="section section-alt" id="flujo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Así fluye un pedido <span class="text-gradient">en tu restaurante</span></h2>
+        <p class="section-subtitle">Desde que el cliente se sienta hasta que se contabiliza la venta. Cada paso está digitalizado y conectado en tiempo real.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 360" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <marker id="restoArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6"/>
+            </marker>
+            <filter id="restoShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+            <linearGradient id="restoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#6d28d9"/>
+            </linearGradient>
+            <linearGradient id="restoKitchen" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+            <linearGradient id="restoDone" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Título -->
+          <text x="550" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#475569">Ciclo completo de un pedido en Odoo Restaurant</text>
+
+          <!-- Paso 1 -->
+          <rect x="10" y="50" width="120" height="155" rx="12" fill="white" stroke="#e2e8f0" filter="url(#restoShadow)"/>
+          <circle cx="70" cy="75" r="13" fill="url(#restoGrad)"/>
+          <text x="70" y="79" text-anchor="middle" font-size="12" fill="white" font-weight="700">1</text>
+          <text x="70" y="105" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">🧑 Cliente</text>
+          <text x="70" y="125" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Llega y se</text>
+          <text x="70" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">sienta</text>
+          <text x="70" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Mesa asignada</text>
+          <text x="70" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">en plano digital</text>
+
+          <line x1="130" y1="115" x2="165" y2="115" stroke="#8b5cf6" stroke-width="2.2" marker-end="url(#restoArrow)"/>
+
+          <!-- Paso 2 -->
+          <rect x="170" y="50" width="120" height="155" rx="12" fill="white" stroke="#e2e8f0" filter="url(#restoShadow)"/>
+          <circle cx="230" cy="75" r="13" fill="url(#restoGrad)"/>
+          <text x="230" y="79" text-anchor="middle" font-size="12" fill="white" font-weight="700">2</text>
+          <text x="230" y="105" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">📱 Mesero</text>
+          <text x="230" y="125" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Toma pedido</text>
+          <text x="230" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">en tablet POS</text>
+          <text x="230" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Modificadores</text>
+          <text x="230" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">y notas de cocina</text>
+
+          <line x1="290" y1="115" x2="325" y2="115" stroke="#8b5cf6" stroke-width="2.2" marker-end="url(#restoArrow)"/>
+
+          <!-- Paso 3 - KDS -->
+          <rect x="330" y="45" width="135" height="165" rx="12" fill="white" stroke="#f59e0b" stroke-width="2.2" filter="url(#restoShadow)"/>
+          <rect x="330" y="45" width="135" height="30" rx="12" fill="url(#restoKitchen)"/>
+          <rect x="330" y="60" width="135" height="15" fill="url(#restoKitchen)"/>
+          <circle cx="345" cy="60" r="11" fill="rgba(255,255,255,0.2)"/>
+          <text x="345" y="64" text-anchor="middle" font-size="11" fill="white" font-weight="700">3</text>
+          <text x="398" y="64" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="white">👨‍🍳 KDS</text>
+          <text x="398" y="95" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">Pantalla cocina</text>
+          <text x="398" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">Orden priorizada</text>
+          <text x="398" y="129" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Tiempo en pantalla</text>
+          <text x="398" y="146" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Colores: normal,</text>
+          <text x="398" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">demorado, urgente</text>
+          <text x="398" y="182" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#f59e0b">Marcar como listo</text>
+
+          <line x1="465" y1="115" x2="500" y2="115" stroke="#8b5cf6" stroke-width="2.2" marker-end="url(#restoArrow)"/>
+
+          <!-- Paso 4 -->
+          <rect x="505" y="50" width="120" height="155" rx="12" fill="white" stroke="#e2e8f0" filter="url(#restoShadow)"/>
+          <circle cx="565" cy="75" r="13" fill="url(#restoGrad)"/>
+          <text x="565" y="79" text-anchor="middle" font-size="12" fill="white" font-weight="700">4</text>
+          <text x="565" y="105" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">🍳 Cocina</text>
+          <text x="565" y="125" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Prepara el</text>
+          <text x="565" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">plato</text>
+          <text x="565" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Sigue la receta</text>
+          <text x="565" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Descuenta stock</text>
+
+          <line x1="625" y1="115" x2="660" y2="115" stroke="#8b5cf6" stroke-width="2.2" marker-end="url(#restoArrow)"/>
+
+          <!-- Paso 5 -->
+          <rect x="665" y="50" width="120" height="155" rx="12" fill="white" stroke="#e2e8f0" filter="url(#restoShadow)"/>
+          <circle cx="725" cy="75" r="13" fill="url(#restoGrad)"/>
+          <text x="725" y="79" text-anchor="middle" font-size="12" fill="white" font-weight="700">5</text>
+          <text x="725" y="105" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">🏃 Servicio</text>
+          <text x="725" y="125" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Mesero sirve</text>
+          <text x="725" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">el plato</text>
+          <text x="725" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Notificado en</text>
+          <text x="725" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">tablet al instante</text>
+
+          <line x1="785" y1="115" x2="820" y2="115" stroke="#8b5cf6" stroke-width="2.2" marker-end="url(#restoArrow)"/>
+
+          <!-- Paso 6 -->
+          <rect x="825" y="50" width="125" height="155" rx="12" fill="white" stroke="#10b981" stroke-width="2.2" filter="url(#restoShadow)"/>
+          <rect x="825" y="50" width="125" height="30" rx="12" fill="url(#restoDone)"/>
+          <rect x="825" y="65" width="125" height="15" fill="url(#restoDone)"/>
+          <circle cx="840" cy="65" r="11" fill="rgba(255,255,255,0.2)"/>
+          <text x="840" y="69" text-anchor="middle" font-size="11" fill="white" font-weight="700">6</text>
+          <text x="895" y="69" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="white">💳 Pago</text>
+          <text x="888" y="95" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">Facturación</text>
+          <text x="888" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">electrónica DIAN</text>
+          <text x="888" y="129" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Efectivo/Tarjeta</text>
+          <text x="888" y="146" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">División de cuenta</text>
+          <text x="888" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Propina incluida</text>
+          <text x="888" y="182" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Cierre de mesa</text>
+
+          <!-- Barra inferior -->
+          <rect x="10" y="240" width="1080" height="50" rx="12" fill="rgba(139,92,246,0.05)" stroke="#c4b5fd" stroke-dasharray="6,3"/>
+          <text x="550" y="260" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#8b5cf6">📊 Automático: Contabilidad NIIF se actualiza · Inventario de ingredientes se descuenta · Proveedor recibe alerta si stock mínimo</text>
+          <text x="550" y="280" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Reportes en tiempo real: rentabilidad por plato, ventas por mesero, rotación de mesas, mermas, costo de venta</text>
+
+          <!-- Footer label -->
+          <rect x="320" y="325" width="460" height="24" rx="12" fill="rgba(139,92,246,0.08)"/>
+          <text x="550" y="341" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#7c3aed">Todo en tiempo real · Sin papel · Integrado con la DIAN · Multi-sucursal</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- POS Y SALÓN -->
+  <section class="section" id="pos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">POS Restaurant</span>
+        <h2 class="section-title">Gestión visual del <span class="text-gradient">salón y las mesas</span></h2>
+        <p class="section-subtitle">El punto de venta más completo para restaurantes. Plano de mesas, órdenes en tablet y todo lo que necesitas para un servicio rápido y organizado.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 520" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <filter id="salonSh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.1"/></filter>
+          </defs>
+
+          <!-- Plano del salón -->
+          <rect x="30" y="20" width="600" height="480" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+          <text x="330" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#334155">Plano del Salón Principal</text>
+
+          <!-- Paredes -->
+          <rect x="30" y="20" width="600" height="14" rx="7" fill="#e2e8f0"/>
+          <rect x="30" y="486" width="600" height="14" rx="7" fill="#e2e8f0"/>
+
+          <!-- Zona 1: Terraza -->
+          <rect x="50" y="65" width="250" height="180" rx="10" fill="rgba(16,185,129,0.06)" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <text x="175" y="85" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#10b981">🌿 Terraza</text>
+
+          <!-- Mesas terraza -->
+          <rect x="65" y="100" width="52" height="52" rx="8" fill="#10b981" opacity="0.15"/><text x="91" y="130" text-anchor="middle" font-size="10" fill="#10b981" font-weight="600">T1</text>
+          <rect x="140" y="100" width="52" height="52" rx="8" fill="#f59e0b" opacity="0.2"/><text x="166" y="130" text-anchor="middle" font-size="10" fill="#d97706" font-weight="600">T2</text>
+          <rect x="215" y="100" width="52" height="52" rx="8" fill="#10b981" opacity="0.15"/><text x="241" y="130" text-anchor="middle" font-size="10" fill="#10b981" font-weight="600">T3</text>
+          <rect x="65" y="170" width="52" height="52" rx="8" fill="#ef4444" opacity="0.2"/><text x="91" y="200" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="600">T4</text>
+          <rect x="140" y="170" width="52" height="52" rx="8" fill="#10b981" opacity="0.15"/><text x="166" y="200" text-anchor="middle" font-size="10" fill="#10b981" font-weight="600">T5</text>
+          <rect x="215" y="170" width="52" height="52" rx="8" fill="#f59e0b" opacity="0.2"/><text x="241" y="200" text-anchor="middle" font-size="10" fill="#d97706" font-weight="600">T6</text>
+
+          <!-- Zona 2: Salón interior -->
+          <rect x="320" y="65" width="290" height="250" rx="10" fill="rgba(139,92,246,0.04)" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <text x="465" y="85" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#8b5cf6">🪑 Salón Interior</text>
+
+          <rect x="340" y="100" width="62" height="62" rx="8" fill="#f59e0b" opacity="0.2"/><text x="371" y="135" text-anchor="middle" font-size="11" fill="#d97706" font-weight="600">S1</text>
+          <rect x="425" y="100" width="62" height="62" rx="8" fill="#10b981" opacity="0.15"/><text x="456" y="135" text-anchor="middle" font-size="11" fill="#10b981" font-weight="600">S2</text>
+          <rect x="510" y="100" width="62" height="62" rx="8" fill="#ef4444" opacity="0.2"/><text x="541" y="135" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="600">S3</text>
+          <rect x="340" y="185" width="62" height="62" rx="8" fill="#9ca3af" opacity="0.2"/><text x="371" y="220" text-anchor="middle" font-size="11" fill="#6b7280" font-weight="600">S4</text>
+          <rect x="425" y="185" width="62" height="62" rx="8" fill="#10b981" opacity="0.15"/><text x="456" y="220" text-anchor="middle" font-size="11" fill="#10b981" font-weight="600">S5</text>
+          <rect x="510" y="185" width="62" height="62" rx="8" fill="#f59e0b" opacity="0.2"/><text x="541" y="220" text-anchor="middle" font-size="11" fill="#d97706" font-weight="600">S6</text>
+          <rect x="340" y="265" width="62" height="32" rx="8" fill="#10b981" opacity="0.15"/><text x="371" y="285" text-anchor="middle" font-size="10" fill="#10b981" font-weight="600">S7</text>
+
+          <!-- Barra -->
+          <rect x="50" y="330" width="560" height="45" rx="10" fill="#334155"/>
+          <text x="330" y="358" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="white">🍸 Barra</text>
+
+          <!-- Zona 3: VIP -->
+          <rect x="50" y="400" width="560" height="80" rx="10" fill="rgba(245,158,11,0.04)" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <text x="90" y="420" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#d97706">⭐ Zona VIP</text>
+          <rect x="70" y="428" width="70" height="38" rx="8" fill="#9ca3af" opacity="0.2"/><text x="105" y="451" text-anchor="middle" font-size="10" fill="#6b7280" font-weight="600">VIP 1</text>
+          <rect x="170" y="428" width="70" height="38" rx="8" fill="#f59e0b" opacity="0.2"/><text x="205" y="451" text-anchor="middle" font-size="10" fill="#d97706" font-weight="600">VIP 2</text>
+
+          <!-- Leyenda (lado derecho) -->
+          <rect x="660" y="20" width="410" height="480" rx="14" fill="white" stroke="#e2e8f0" filter="url(#salonSh)"/>
+          <text x="865" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Leyenda y Funcionalidades</text>
+
+          <rect x="685" y="70" width="12" height="12" rx="3" fill="#10b981" opacity="0.5"/><text x="708" y="82" font-family="Inter,sans-serif" font-size="12" fill="#475569">Verde: Disponible</text>
+          <rect x="685" y="95" width="12" height="12" rx="3" fill="#f59e0b" opacity="0.6"/><text x="708" y="107" font-family="Inter,sans-serif" font-size="12" fill="#475569">Naranja: Ocupada</text>
+          <rect x="685" y="120" width="12" height="12" rx="3" fill="#ef4444" opacity="0.5"/><text x="708" y="132" font-family="Inter,sans-serif" font-size="12" fill="#475569">Rojo: Por pagar</text>
+          <rect x="685" y="145" width="12" height="12" rx="3" fill="#9ca3af" opacity="0.4"/><text x="708" y="157" font-family="Inter,sans-serif" font-size="12" fill="#475569">Gris: Reservada</text>
+
+          <!-- Feature list right side -->
+          <text x="865" y="195" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#8b5cf6">Funcionalidades del POS</text>
+          <line x1="690" y1="205" x2="1040" y2="205" stroke="#e2e8f0" stroke-width="1"/>
+
+          <text x="700" y="230" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Plano de mesas arrastrable y personalizable</text>
+          <text x="700" y="252" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Cambio de mesa en un clic (mover clientes)</text>
+          <text x="700" y="274" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ División de cuenta por persona o por plato</text>
+          <text x="700" y="296" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Propina configurable (% o valor fijo)</text>
+          <text x="700" y="318" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Múltiples métodos de pago en una cuenta</text>
+          <text x="700" y="340" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Apertura y cierre de caja automatizado</text>
+          <text x="700" y="362" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Descuentos por mesero autorizado</text>
+          <text x="700" y="384" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Impresión de ticket y factura electrónica</text>
+          <text x="700" y="406" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Órdenes simultáneas a cocina y barra</text>
+          <text x="700" y="428" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Funciona online y offline (sin internet)</text>
+          <text x="700" y="450" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Reservas y pre-asignación de mesas</text>
+          <text x="700" y="472" font-family="Inter,sans-serif" font-size="11" fill="#475569">✓ Perfil de cliente y cumpleaños</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- COCINA Y RECETAS -->
+  <section class="section section-alt" id="cocina">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Cocina Inteligente</span>
+        <h2 class="section-title">Kitchen Display y <span class="text-gradient">gestión de recetas</span></h2>
+        <p class="section-subtitle">La cocina recibe las órdenes en tiempo real. Cada plato tiene su receta con ingredientes exactos, costos y tiempos de preparación.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 480" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <filter id="kcSh"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.1"/></filter>
+            <linearGradient id="kcRed" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#dc2626"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Kitchen Display -->
+          <rect x="20" y="10" width="520" height="455" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" filter="url(#kcSh)"/>
+          <text x="280" y="40" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="700" fill="white">Kitchen Display System</text>
+
+          <!-- Órdenes en KDS -->
+          <rect x="40" y="60" width="480" height="55" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)"/>
+          <text x="60" y="82" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#f87171">#287 · Mesa 4 · 12:03 (8 min)</text>
+          <text x="60" y="100" font-family="Inter,sans-serif" font-size="11" fill="#cbd5e1">Pizza Margarita x1 | César con Pollo x2 | SIN cebolla</text>
+
+          <rect x="40" y="125" width="480" height="55" rx="8" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.3)"/>
+          <text x="60" y="147" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fbbf24">#288 · Mesa S3 · 12:01 (10 min)</text>
+          <text x="60" y="165" font-family="Inter,sans-serif" font-size="11" fill="#cbd5e1">Lomo al Trapo x2 | Término medio | SIN gluten</text>
+
+          <rect x="40" y="190" width="480" height="55" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)"/>
+          <text x="60" y="212" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#4ade80">#289 · Mesa T2 · 12:00 (11 min)</text>
+          <text x="60" y="230" font-family="Inter,sans-serif" font-size="11" fill="#cbd5e1">Hamburguesa Clásica x3 | Papas extra | Salsa BBQ aparte</text>
+
+          <rect x="40" y="255" width="480" height="50" rx="8" fill="rgba(139,92,246,0.08)" stroke="rgba(139,92,246,0.2)"/>
+          <text x="60" y="275" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#a78bfa">#290 · Barra · 11:58 (13 min)</text>
+          <text x="60" y="293" font-family="Inter,sans-serif" font-size="11" fill="#cbd5e1">Limonada Natural x4 | Mojito x2 | SIN azúcar</text>
+
+          <!-- Botones -->
+          <rect x="40" y="320" width="150" height="30" rx="6" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)"/>
+          <text x="115" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#4ade80">Marcar como Listo</text>
+          <rect x="210" y="320" width="150" height="30" rx="6" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.2)"/>
+          <text x="285" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#f87171">Sin Stock</text>
+
+          <!-- Prioridad -->
+          <text x="60" y="380" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Prioridad por color: urgente (rojo) · demorado (amarillo) · normal (verde) · barra (morado)</text>
+          <text x="60" y="400" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Sonido de alerta cuando el pedido supera el tiempo estimado de preparación</text>
+          <text x="60" y="420" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Notas de cocina, modificadores y alergias visibles en cada orden</text>
+
+          <!-- Receta BOM lado derecho -->
+          <rect x="560" y="10" width="520" height="455" rx="14" fill="white" stroke="#e2e8f0" filter="url(#kcSh)"/>
+          <text x="820" y="40" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="700" fill="#1e293b">Receta: Pizza Margarita</text>
+
+          <rect x="580" y="60" width="480" height="1" fill="#e2e8f0"/>
+
+          <!-- Ingredientes -->
+          <text x="600" y="88" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#8b5cf6">📋 Lista de Materiales (BOM)</text>
+
+          <rect x="580" y="100" width="480" height="28" rx="4" fill="#f8fafc"/>
+          <text x="595" y="118" font-family="Inter,sans-serif" font-size="11" fill="#475569">Harina de trigo</text><text x="750" y="118" font-family="Inter,sans-serif" font-size="11" fill="#64748b">250 g</text><text x="830" y="118" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">$450</text>
+          <rect x="580" y="132" width="480" height="28" rx="4" fill="white"/>
+          <text x="595" y="150" font-family="Inter,sans-serif" font-size="11" fill="#475569">Queso mozzarella</text><text x="750" y="150" font-family="Inter,sans-serif" font-size="11" fill="#64748b">150 g</text><text x="830" y="150" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">$2,100</text>
+          <rect x="580" y="164" width="480" height="28" rx="4" fill="#f8fafc"/>
+          <text x="595" y="182" font-family="Inter,sans-serif" font-size="11" fill="#475569">Salsa de tomate</text><text x="750" y="182" font-family="Inter,sans-serif" font-size="11" fill="#64748b">80 g</text><text x="830" y="182" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">$600</text>
+          <rect x="580" y="196" width="480" height="28" rx="4" fill="white"/>
+          <text x="595" y="214" font-family="Inter,sans-serif" font-size="11" fill="#475569">Albahaca fresca</text><text x="750" y="214" font-family="Inter,sans-serif" font-size="11" fill="#64748b">10 g</text><text x="830" y="214" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">$300</text>
+          <rect x="580" y="228" width="480" height="28" rx="4" fill="#f8fafc"/>
+          <text x="595" y="246" font-family="Inter,sans-serif" font-size="11" fill="#475569">Aceite de oliva</text><text x="750" y="246" font-family="Inter,sans-serif" font-size="11" fill="#64748b">15 ml</text><text x="830" y="246" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">$520</text>
+          <rect x="580" y="260" width="480" height="28" rx="4" fill="white"/>
+          <text x="595" y="278" font-family="Inter,sans-serif" font-size="11" fill="#475569">Sal</text><text x="750" y="278" font-family="Inter,sans-serif" font-size="11" fill="#64748b">5 g</text><text x="830" y="278" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">$10</text>
+
+          <!-- Totales -->
+          <rect x="580" y="300" width="480" height="1" fill="#e2e8f0"/>
+          <text x="600" y="325" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">Costo total ingredientes:</text>
+          <text x="870" y="325" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#8b5cf6">$3,980</text>
+
+          <text x="600" y="350" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">Precio de venta:</text>
+          <text x="870" y="350" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#10b981">$32,000</text>
+          <text x="930" y="350" font-family="Inter,sans-serif" font-size="11" fill="#10b981">(87.6% margen)</text>
+
+          <text x="600" y="380" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Tiempo de preparación: 12 min</text>
+          <text x="600" y="398" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Rinde: 1 porción (personal)</text>
+          <text x="600" y="416" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Variantes: Grande (x1.8 ingredientes, $48,000)</text>
+          <text x="600" y="438" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Al descuenta stock al marcar como listo en cocina</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVENTARIO Y COMPRAS -->
+  <section class="section" id="inventario">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Inventario inteligente y <span class="text-gradient">compras automáticas</span></h2>
+        <p class="section-subtitle">Cada plato vendido descuenta los ingredientes del inventario. Cuando el stock llega al mínimo, Odoo genera la orden de compra automáticamente.</p>
+      </div>
+      <div class="retail-duo">
+        <div class="retail-card retail-detal">
+          <div class="retail-card-badge">📦 Control de Inventario</div>
+          <div class="retail-icon">📦</div>
+          <h3>Stock en Tiempo Real</h3>
+          <ul class="retail-features">
+            <li>Inventario por almacén: cocina, barra, bodega, nevera</li>
+            <li>Descuento automático al vender cada plato</li>
+            <li>Trazabilidad por lote y fecha de vencimiento</li>
+            <li>Conteos cíclicos programados por categoría</li>
+            <li>Registro de mermas y desperdicios con motivo</li>
+            <li>Alertas de vencimiento próximo (3, 7, 15 días)</li>
+            <li>Costeo automático del inventario (FIFO/Promedio)</li>
+            <li>Inventario teórico vs real con justificación</li>
+          </ul>
+        </div>
+        <div class="retail-card retail-mayor">
+          <div class="retail-card-badge">🛒 Compras Inteligentes</div>
+          <div class="retail-icon">🛒</div>
+          <h3>Abastecimiento Automatizado</h3>
+          <ul class="retail-features">
+            <li>Órdenes de compra automáticas por stock mínimo</li>
+            <li>Comparación de cotizaciones por proveedor</li>
+            <li>Historial de precios y tendencias por insumo</li>
+            <li>Recepción con control de calidad y frescura</li>
+            <li>Programación de entregas por día y horario</li>
+            <li>Múltiples proveedores por insumo</li>
+            <li>Factura de compra electrónica (proveedor)</li>
+            <li>Conciliación automática con cuentas por pagar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todo lo que Odoo Restaurant <span class="text-gradient">puede hacer</span></h2>
+        <p class="section-subtitle">Funcionalidades diseñadas para que tu restaurante opere con precisión quirúrgica, desde el salón hasta la contabilidad.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🍽️</span>
+          <div>
+            <h4>POS Táctil para Restaurante</h4>
+            <p>Interfaz optimizada para tablet. Plano de mesas, órdenes rápidas, modificadores de plato y envío instantáneo a cocina y barra.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">👨‍🍳</span>
+          <div>
+            <h4>Kitchen Display System</h4>
+            <p>Pantalla en cocina con órdenes priorizadas por tiempo. Colores por urgencia, sonido de alerta y marcado de platos listos.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🗺️</span>
+          <div>
+            <h4>Gestión de Mesas y Salones</h4>
+            <p>Plano arrastrable con múltiples salones. Estados de mesa por color: libre, ocupada, por pagar, reservada. Historial de ocupación.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📋</span>
+          <div>
+            <h4>Recetas y Costeo de Platos</h4>
+            <p>Cada plato con su BOM (lista de ingredientes). Costeo automático, margen por plato, variantes y rendimiento por porción.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📦</span>
+          <div>
+            <h4>Inventario de Ingredientes</h4>
+            <p>Control de stock por almacén. Descuento automático al vender, alertas de vencimiento, conteos cíclicos y mermas.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📄</span>
+          <div>
+            <h4>Facturación Electrónica DIAN</h4>
+            <p>Factura electrónica desde el POS. Válida para persona natural y jurídica. CUFE automático y envío al correo del cliente.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📊</span>
+          <div>
+            <h4>Contabilidad NIIF Colombia</h4>
+            <p>Cada venta, compra y nómina se contabiliza automáticamente. Estados financieros, impuestos y reportes para entes de control.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🛵</span>
+          <div>
+            <h4>Pedidos Online y Delivery</h4>
+            <p>Tienda virtual integrada con tu menú. Los pedidos web entran directo al POS y a la cocina. Integrable con apps de domicilios.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⭐</span>
+          <div>
+            <h4>Programa de Fidelización</h4>
+            <p>Tarjeta de cliente frecuente, puntos por consumo, descuentos de cumpleaños y campañas de email marketing automatizadas.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📈</span>
+          <div>
+            <h4>Reportes de Rentabilidad</h4>
+            <p>Dashboards con KPIs: platos más vendidos, margen por plato, ventas por mesero, rotación de mesas, costo de venta vs ideal.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🏢</span>
+          <div>
+            <h4>Múltiples Sucursales</h4>
+            <p>Gestiona todos tus restaurantes desde un solo Odoo. Consolidación de reportes, inventarios por sede, menús independientes.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <div>
+            <h4>App Móvil para Dueños</h4>
+            <p>Ventas del día, ocupación en vivo, alertas de stock bajo y reportes financieros desde tu celular, estés donde estés.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resultados <span class="text-gradient">que se miden</span></h2>
+        <p class="section-subtitle">Los restaurantes que migran a Odoo Enterprise con Poliedro ven mejoras inmediatas en eficiencia, control y rentabilidad.</p>
+      </div>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <span class="beneficio-number">30%</span>
+          <span class="beneficio-label">menos mermas y desperdicios</span>
+          <p>El inventario en tiempo real y las alertas de vencimiento reducen drásticamente el desperdicio de ingredientes.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">40%</span>
+          <span class="beneficio-label">más rápido el servicio en mesa</span>
+          <p>Sin tickets de papel. El pedido viaja del mesero a la cocina en segundos. El cliente espera menos y consume más.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">100%</span>
+          <span class="beneficio-label">costeo de platos preciso</span>
+          <p>Cada plato tiene su costo real calculado al instante. Sabes exactamente el margen de cada ítem de tu menú.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">0</span>
+          <span class="beneficio-label">papel en cocina</span>
+          <p>Comandas digitales en KDS. Sin tickets extraviados, sin letra ilegible, sin confusiones. Cocina 100% digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section section-alt" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Implementación <span class="text-gradient">a tu medida</span></h2>
+        <p class="section-subtitle">Elige el modelo que mejor se adapte a tu restaurante. Desde un solo local hasta cadenas con múltiples sucursales.</p>
+      </div>
+      <div class="planes-grid">
+        <div class="plan-card">
+          <div class="plan-icon">☁️</div>
+          <h3>Odoo como SaaS</h3>
+          <p class="plan-desc">Poliedro gestiona la infraestructura. Servidores seguros, backups diarios, actualizaciones automáticas y soporte 24/7 incluido.</p>
+          <ul class="plan-features">
+            <li>Infraestructura 100% gestionada</li>
+            <li>Actualizaciones automáticas de Odoo</li>
+            <li>Soporte 24/7 en español</li>
+            <li>Facturación electrónica incluida</li>
+          </ul>
+        </div>
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">Recomendado</div>
+          <div class="plan-icon">🏠</div>
+          <h3>Self-Hosted</h3>
+          <p class="plan-desc">Instala Odoo en tu propia infraestructura. Control total sobre datos y servidores. Ideal para cadenas con requisitos de auditoría interna.</p>
+          <ul class="plan-features">
+            <li>Datos 100% en tus servidores</li>
+            <li>Personalización total de módulos</li>
+            <li>Integración con sistemas legados</li>
+            <li>Soporte técnico de Poliedro</li>
+          </ul>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🎓</div>
+          <h3>Acompañamiento</h3>
+          <p class="plan-desc">Consultoría, migración de datos, configuración de menús y recetas, capacitación de meseros, cocineros y administradores.</p>
+          <ul class="plan-features">
+            <li>Migración desde tu sistema actual</li>
+            <li>Carga de menú, recetas y costos</li>
+            <li>Capacitación por roles</li>
+            <li>Soporte post-implementación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="section" id="confianza">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Restaurantes que usan <span class="text-gradient">Odoo</span></h2>
+        <p class="section-subtitle">Desde restaurantes independientes hasta grandes cadenas, Odoo Restaurant gestiona miles de operaciones diarias.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-name">Andrés Carne de Res</div>
+          <div class="trust-stat">Cadena premium</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Crepes & Waffles</div>
+          <div class="trust-stat">Franquicia</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Grupo Takami</div>
+          <div class="trust-stat">Alta cocina</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">El Corral</div>
+          <div class="trust-stat">Comida rápida</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Frisby</div>
+          <div class="trust-stat">Pollos y parrilla</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-name">Mercagan</div>
+          <div class="trust-stat">Distribuidora HORECA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container cta-container">
+      <h2 class="cta-title">¿Listo para digitalizar tu restaurante con Odoo?</h2>
+      <p class="cta-subtitle">Agenda una demo personalizada. Te mostramos el POS, la cocina digital y los reportes de rentabilidad con ejemplos de tu menú.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-lg">Solicitar Demo</a>
+        <a href="#" class="btn btn-outline-white btn-lg">Hablar con un asesor</a>
+        <a href="brochure.html" class="btn btn-brochure-dark btn-lg">Descargar Brochure</a>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-item">
+          <span>📧</span> poliedrosoftware@gmail.com
+        </div>
+        <div class="cta-contact-item">
+          <span>📞</span> +57 315 7690579
+        </div>
+        <div class="cta-contact-item">
+          <span>🌐</span> poliedrosoftware.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo_poliedro.png" alt="Poliedro" class="footer-logo">
+        <p>Implementamos Odoo Restaurant Enterprise. POS táctil, cocina digital, inventario de ingredientes y contabilidad en una sola plataforma.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Módulos</h5>
+          <a href="#pos">POS Restaurant</a>
+          <a href="#cocina">Kitchen Display</a>
+          <a href="#inventario">Inventario</a>
+          <a href="#cocina">Recetas y Costeo</a>
+        </div>
+        <div class="footer-col">
+          <h5>Plataforma</h5>
+          <a href="#planes">Planes</a>
+          <a href="#que-es">¿Qué es Odoo?</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#confianza">Casos de éxito</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="#contacto">Demo</a>
+          <a href="#">Soporte</a>
+          <a href="#">Consultoría</a>
+          <a href="#">Poliedro</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Poliedro. Todos los derechos reservados. Odoo es una marca registrada de Odoo S.A. (Bélgica).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/573154286798" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatea por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 54.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
