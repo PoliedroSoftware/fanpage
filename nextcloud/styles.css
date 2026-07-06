@@ -247,6 +247,19 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-pago {
+  background: #e83e8c;
+  color: var(--white);
+  border-color: #e83e8c;
+}
+
+.btn-pago:hover {
+  background: #d63384;
+  border-color: #d63384;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(232, 62, 140, 0.35);
+}
+
 /* ===== SECTIONS ===== */
 .section {
   padding: 6rem 0;
@@ -845,6 +858,62 @@ body {
   height: auto;
 }
 
+/* ===== PAGO ===== */
+.pago-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pago-qr-card {
+  text-align: center;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.pago-qr-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.pago-qr-label {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.pago-action-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.pago-action-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.pago-action-card p {
+  font-size: 0.95rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+.pago-seguro {
+  font-size: 0.8rem !important;
+  color: #10b981 !important;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background: var(--poliedro-navy-dark);
@@ -969,6 +1038,8 @@ body {
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-container { grid-template-columns: 1fr; }
   .footer-links { grid-template-columns: repeat(2, 1fr); }
+  .pago-grid { grid-template-columns: 1fr; text-align: center; }
+  .pago-action-card { align-items: center; }
 }
 
 @media (max-width: 480px) {
