@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure Digiturno — Poliedro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #f59e0b; --primary-dark: #d97706; --poliedro: #0072a1;
+      --navy: #183146; --navy-dark: #0f1e2d; --gray-100: #f1f5f9; --gray-200: #e2e8f0;
+      --gray-500: #64748b; --gray-700: #334155; --gray-800: #1e293b; --gray-900: #0f172a; --white: #ffffff;
+    }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--gray-800); line-height: 1.6; background: var(--white); }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 0; position: relative; page-break-after: always; }
+    @media print { body { background: white; } .page { box-shadow: none; margin: 0; width: auto; min-height: auto; } .no-print { display: none; } }
+    @media screen { body { background: #e2e8f0; } .page { background: white; box-shadow: 0 0 20px rgba(0,0,0,0.15); margin: 20px auto; } }
+    .cover { background: linear-gradient(135deg, var(--navy-dark) 0%, #1a0a3e 40%, var(--primary-dark) 100%); color: var(--white); display: flex; flex-direction: column; justify-content: center; padding: 60px 50px; position: relative; overflow: hidden; }
+    .cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 50%, rgba(245,158,11,0.22) 0%, transparent 60%), radial-gradient(ellipse at 80% 30%, rgba(0,114,161,0.2) 0%, transparent 60%); }
+    .cover-content { position: relative; z-index: 1; }
+    .cover-logo { height: 55px; width: auto; margin-bottom: 60px; filter: brightness(0) invert(1); }
+    .cover-badge { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); padding: 6px 20px; border-radius: 50px; font-size: 13px; font-weight: 500; margin-bottom: 24px; letter-spacing: 0.03em; }
+    .cover h1 { font-size: 42px; font-weight: 900; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.03em; }
+    .cover h1 span { background: linear-gradient(135deg, #fbbf24, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cover p { font-size: 17px; opacity: 0.8; line-height: 1.7; max-width: 500px; margin-bottom: 40px; }
+    .cover-modules { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+    .cover-mod { padding: 14px; background: rgba(255,255,255,0.07); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+    .cover-mod-icon { font-size: 26px; margin-bottom: 6px; }
+    .cover-mod-label { font-size: 11px; font-weight: 600; opacity: 0.85; }
+    .inner { padding: 50px 50px 40px; display: flex; flex-direction: column; position: relative; }
+    .inner-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .inner-header-line { width: 50px; height: 3px; background: linear-gradient(90deg, var(--primary), var(--poliedro)); border-radius: 2px; }
+    .inner-header span { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary-dark); }
+    .inner h2 { font-size: 26px; font-weight: 800; color: var(--gray-900); margin-bottom: 12px; letter-spacing: -0.02em; }
+    .inner h3 { font-size: 17px; font-weight: 700; color: var(--gray-800); margin-bottom: 6px; }
+    .inner p, .inner li { font-size: 13px; color: var(--gray-500); line-height: 1.65; }
+    .inner-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; }
+    .inner-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 16px; }
+    .inner-card { background: var(--gray-100); border-radius: 12px; padding: 20px; }
+    .inner-card-icon { font-size: 24px; margin-bottom: 8px; }
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+    .feature-list li { padding-left: 18px; position: relative; font-size: 12px; }
+    .feature-list li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-dark); font-weight: 700; font-size: 11px; }
+    .flow-steps { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+    .flow-step { background: white; border: 1px solid var(--gray-200); border-radius: 10px; padding: 10px 14px; text-align: center; font-size: 12px; font-weight: 600; }
+    .flow-arrow { font-size: 16px; color: var(--primary-dark); }
+    .benefits-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 20px; }
+    .benefit-box { background: linear-gradient(135deg, rgba(245,158,11,0.05) 0%, rgba(0,114,161,0.05) 100%); border-radius: 12px; padding: 22px 14px; text-align: center; border: 1px solid rgba(245,158,11,0.1); }
+    .benefit-number { font-size: 34px; font-weight: 900; background: linear-gradient(135deg, var(--primary), var(--poliedro)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 6px; }
+    .benefit-label { font-size: 12px; font-weight: 600; color: var(--gray-700); }
+    .sectores-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px; }
+    .sector-card { background: var(--gray-100); border-radius: 10px; padding: 14px; text-align: center; font-size: 12px; }
+    .sector-icon { font-size: 22px; margin-bottom: 4px; }
+    .contact-section { background: var(--gray-100); border-radius: 12px; padding: 24px; margin-top: 24px; }
+    .contact-row { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+    .contact-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--gray-700); }
+    .page-footer { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--gray-200); display: flex; justify-content: space-between; font-size: 10px; color: var(--gray-500); }
+    .download-bar { text-align: center; padding: 16px; }
+    .download-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--primary); color: white; text-decoration: none; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <div class="page cover">
+    <div class="cover-content">
+      <img src="logo_poliedro.png" alt="Poliedro" class="cover-logo">
+      <div class="cover-badge">Digiturno · Basado en NovoSGA</div>
+      <h1>Elimina las filas físicas:<br><span>gestión de turnos inteligente</span></h1>
+      <p>Ticket digital, pantallas de llamado, audio multilingüe y estadísticas en tiempo real. Open Source, 12+ años de desarrollo, +5,000 instalaciones activas.</p>
+      <div class="cover-modules">
+        <div class="cover-mod"><div class="cover-mod-icon">🎫</div><div class="cover-mod-label">Tickets</div></div>
+        <div class="cover-mod"><div class="cover-mod-icon">📺</div><div class="cover-mod-label">Paneles TV</div></div>
+        <div class="cover-mod"><div class="cover-mod-icon">🔊</div><div class="cover-mod-label">Audio</div></div>
+        <div class="cover-mod"><div class="cover-mod-icon">📊</div><div class="cover-mod-label">Estadísticas</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Digiturno</span></div>
+    <h2>Sistema completo de gestión de turnos</h2>
+    <p style="margin-bottom:16px;">Basado en NovoSGA, el sistema de turnos open source más usado del mundo. Desde 2012 transformando la atención presencial en organizaciones públicas y privadas.</p>
+    <div class="inner-grid-3">
+      <div class="inner-card"><div class="inner-card-icon">🎫</div><h3>Ticket Digital y Físico</h3><p>El usuario selecciona el servicio y recibe su turno. Con impresión de ticket o notificación digital.</p></div>
+      <div class="inner-card"><div class="inner-card-icon">📺</div><h3>Paneles de Llamado</h3><p>Pantallas TV/monitor con turno actual, próximos y tiempo estimado. Personalizables.</p></div>
+      <div class="inner-card"><div class="inner-card-icon">📊</div><h3>Estadísticas</h3><p>Dashboard en tiempo real: tiempos de espera, productividad, horas pico. Exportable.</p></div>
+    </div>
+    <div class="flow-steps" style="margin-top:20px;">
+      <div class="flow-step">🧑 Usuario llega</div><div class="flow-arrow">→</div>
+      <div class="flow-step">🎫 Obtiene turno</div><div class="flow-arrow">→</div>
+      <div class="flow-step" style="background:var(--primary);color:white;">📺 Panel llama</div><div class="flow-arrow">→</div>
+      <div class="flow-step">💻 Agente atiende</div><div class="flow-arrow">→</div>
+      <div class="flow-step">📊 Estadística</div>
+    </div>
+    <div class="inner-header" style="margin-top:20px;"><div class="inner-header-line"></div><span>Paneles</span></div>
+    <div class="inner-grid-2">
+      <div class="inner-card"><div class="inner-card-icon">🖥️</div><h3>Kiosco Autoservicio</h3><p>Pantalla táctil para selección de servicio sin personal. Impresión de ticket o notificación digital.</p></div>
+      <div class="inner-card"><div class="inner-card-icon">📺</div><h3>Panel TV Sala de Espera</h3><p>Muestra turno actual, próximos y tiempo estimado. Logo, colores y video institucional configurables.</p></div>
+      <div class="inner-card"><div class="inner-card-icon">💻</div><h3>Pantalla del Agente</h3><p>Llamar siguiente, transferir, pausa. Teclas rápidas. Registro automático de tiempos de atención.</p></div>
+      <div class="inner-card"><div class="inner-card-icon">📱</div><h3>Notificaciones Móviles</h3><p>SMS o push cuando el turno está próximo. El usuario no necesita mirar la pantalla constantemente.</p></div>
+    </div>
+    <div class="page-footer"><span>Poliedro — Digiturno</span><span>poliedrosoftware.com</span></div>
+  </div>
+
+  <div class="page inner">
+    <div class="inner-header"><div class="inner-header-line"></div><span>Sectores</span></div>
+    <h2>¿Dónde se usa Digiturno?</h2>
+    <div class="sectores-grid">
+      <div class="sector-card"><div class="sector-icon">🏛️</div><strong>Gobierno</strong></div>
+      <div class="sector-card"><div class="sector-icon">🏥</div><strong>Salud</strong></div>
+      <div class="sector-card"><div class="sector-icon">🏦</div><strong>Banca</strong></div>
+      <div class="sector-card"><div class="sector-icon">🎓</div><strong>Educación</strong></div>
+      <div class="sector-card"><div class="sector-icon">⚖️</div><strong>Justicia</strong></div>
+      <div class="sector-card"><div class="sector-icon">🏢</div><strong>Servicios</strong></div>
+      <div class="sector-card"><div class="sector-icon">📦</div><strong>Logística</strong></div>
+      <div class="sector-card"><div class="sector-icon">🛂</div><strong>Migración</strong></div>
+    </div>
+    <div class="benefits-row" style="margin-top:24px;">
+      <div class="benefit-box"><div class="benefit-number">40%</div><div class="benefit-label">menos tiempo de espera</div></div>
+      <div class="benefit-box"><div class="benefit-number">90%</div><div class="benefit-label">satisfacción usuarios</div></div>
+      <div class="benefit-box"><div class="benefit-number">0</div><div class="benefit-label">filas físicas de pie</div></div>
+      <div class="benefit-box"><div class="benefit-number">100%</div><div class="benefit-label">trazabilidad</div></div>
+    </div>
+    <div class="inner-header" style="margin-top:24px;"><div class="inner-header-line"></div><span>Planes</span></div>
+    <h2>Implementación a tu medida</h2>
+    <div class="inner-grid-3">
+      <div class="inner-card"><div class="inner-card-icon">☁️</div><h3>SaaS</h3><p>Poliedro gestiona el servidor. Sin instalar nada. Soporte 24/7.</p></div>
+      <div class="inner-card" style="border:2px solid #fcd34d;"><div class="inner-card-icon">🏠</div><h3>Self-Hosted ★</h3><p>En tu infraestructura. Control total. Ideal para gobierno y entidades públicas.</p></div>
+      <div class="inner-card"><div class="inner-card-icon">🎓</div><h3>Acompañamiento</h3><p>Consultoría, instalación, capacitación y soporte post-implementación.</p></div>
+    </div>
+    <div class="contact-section">
+      <h3 style="text-align:center;margin-bottom:16px;">Contáctanos</h3>
+      <div class="contact-row">
+        <div class="contact-item">📧 poliedrosoftware@gmail.com</div>
+        <div class="contact-item">📞 +57 315 7690579</div>
+        <div class="contact-item">🌐 poliedrosoftware.com</div>
+        <div class="contact-item">💬 WhatsApp +57 315 4286798</div>
+      </div>
+    </div>
+    <div class="page-footer"><span>&copy; 2026 Poliedro. Digiturno basado en NovoSGA (MIT)</span><span>novosga.org</span></div>
+  </div>
+
+  <div class="download-bar no-print">
+    <a href="brochure.html" download class="download-btn">Descargar como PDF</a>
+    <p style="margin-top:8px;font-size:12px;color:var(--gray-500);">También puedes imprimir esta página (Ctrl+P) y guardar como PDF.</p>
+  </div>
+
+</body>
+</html>

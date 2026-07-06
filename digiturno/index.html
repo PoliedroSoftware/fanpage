@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digiturno | Sistema de Gestión de Turnos y Filas | Poliedro</title>
+  <meta name="description" content="Digiturno: sistema inteligente de gestión de turnos y filas basado en NovoSGA. Paneles de llamado, ticket digital, estadísticas y multi-servicio. Open Source.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo_poliedro.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#que-es" class="nav-link">¿Qué es?</a>
+        <a href="#flujo" class="nav-link">Flujo</a>
+        <a href="#paneles" class="nav-link">Paneles</a>
+        <a href="#features" class="nav-link">Funcionalidades</a>
+        <a href="#sectores" class="nav-link">Sectores</a>
+        <a href="#planes" class="nav-link">Planes</a>
+      </div>
+      <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Digiturno · Basado en NovoSGA</span>
+        </div>
+        <h1 class="hero-title">
+          Elimina las filas físicas: <span class="text-gradient">gestión de turnos inteligente</span> para tu organización
+        </h1>
+        <p class="hero-subtitle">
+          Digiturno transforma la espera de tus usuarios en una experiencia ordenada y eficiente. Ticket digital, pantallas de llamado, audio, prioridad y estadísticas en tiempo real. Basado en NovoSGA, el sistema de turnos open source más usado del mundo.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una demo gratuita</a>
+          <a href="brochure.html" class="btn btn-outline btn-lg">Descargar Brochure</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">5,000+</span>
+            <span class="hero-stat-label">Instalaciones activas</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">3</span>
+            <span class="hero-stat-label">Idiomas (ES/EN/PT)</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">12+</span>
+            <span class="hero-stat-label">Años de desarrollo</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card digiturno-panel">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="hero-card-title">Panel de Llamado — En vivo</span>
+          </div>
+          <div class="hero-card-body digiturno-display">
+            <div class="dt-display-screen">
+              <div class="dt-header-row">
+                <span class="dt-service-tag">💼 Caja 1</span>
+                <span class="dt-ticket-current">A042</span>
+              </div>
+              <div class="dt-queue-list">
+                <div class="dt-queue-item">
+                  <span class="dt-queue-ticket dt-called">A042</span>
+                  <span class="dt-queue-desk">Caja 1</span>
+                  <span class="dt-queue-status dt-status-calling">▶ Llamando</span>
+                </div>
+                <div class="dt-queue-item">
+                  <span class="dt-queue-ticket">A043</span>
+                  <span class="dt-queue-desk">—</span>
+                  <span class="dt-queue-status">En espera</span>
+                </div>
+                <div class="dt-queue-item">
+                  <span class="dt-queue-ticket dt-prioridad">P012</span>
+                  <span class="dt-queue-desk">—</span>
+                  <span class="dt-queue-status dt-status-priority">★ Prioritario</span>
+                </div>
+                <div class="dt-queue-item">
+                  <span class="dt-queue-ticket">A044</span>
+                  <span class="dt-queue-desk">—</span>
+                  <span class="dt-queue-status">En espera</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-sync-bar">
+            <div class="hero-sync-dot"></div>
+            <span>Panel de llamado en tiempo real · Audio multilingüe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES DIGITURNO? -->
+  <section class="section" id="que-es">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué es <span class="text-gradient">Digiturno</span>?</h2>
+        <p class="section-subtitle">Un sistema completo de gestión de turnos y filas de atención, basado en NovoSGA. Diseñado para organizaciones que atienden público presencialmente y necesitan orden, eficiencia y una mejor experiencia para sus usuarios.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon card-icon-blue">🎫</div>
+          <h3 class="card-title">Ticket Digital y Físico</h3>
+          <p class="card-text">El usuario llega, selecciona el servicio que necesita y recibe su turno. Puede ser un ticket impreso, un SMS o una notificación digital. Adiós a las filas de pie.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-teal">📺</div>
+          <h3 class="card-title">Paneles de Llamado</h3>
+          <p class="card-text">Pantallas visibles que muestran el turno actual y los próximos. Con audio en múltiples idiomas para llamar al siguiente usuario sin necesidad de gritar.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-dark">📊</div>
+          <h3 class="card-title">Estadísticas y Control</h3>
+          <p class="card-text">Dashboard en tiempo real con tiempos de espera, cantidad de atendidos, productividad por caja y agente. Toma decisiones basadas en datos reales de tu operación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLUJO DEL TURNO -->
+  <section class="section section-alt" id="flujo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Así funciona <span class="text-gradient">Digiturno</span></h2>
+        <p class="section-subtitle">Desde que el usuario llega hasta que es atendido. Todo fluye de forma ordenada, automatizada y sin estrés.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 380" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <marker id="dtArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+            </marker>
+            <filter id="dtShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+            <linearGradient id="dtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+            <linearGradient id="dtDone" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/>
+            </linearGradient>
+            <linearGradient id="dtBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0072a1"/><stop offset="100%" stop-color="#2d97bf"/>
+            </linearGradient>
+          </defs>
+
+          <text x="550" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#475569">Ciclo completo de atención con Digiturno</text>
+
+          <!-- Paso 1 -->
+          <rect x="15" y="55" width="145" height="165" rx="12" fill="white" stroke="#e2e8f0" filter="url(#dtShadow)"/>
+          <circle cx="87" cy="80" r="13" fill="url(#dtGrad)"/>
+          <text x="87" y="84" text-anchor="middle" font-size="12" fill="white" font-weight="700">1</text>
+          <text x="87" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">🧑 Usuario</text>
+          <text x="87" y="132" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Llega al punto</text>
+          <text x="87" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">de atención</text>
+          <text x="87" y="168" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Selecciona servicio</text>
+          <text x="87" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">en kiosco o tablet</text>
+          <text x="87" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Indica prioridad</text>
+
+          <line x1="160" y1="130" x2="200" y2="130" stroke="#f59e0b" stroke-width="2.2" marker-end="url(#dtArrow)"/>
+
+          <!-- Paso 2 -->
+          <rect x="205" y="55" width="155" height="165" rx="12" fill="white" stroke="#e2e8f0" filter="url(#dtShadow)"/>
+          <circle cx="282" cy="80" r="13" fill="url(#dtGrad)"/>
+          <text x="282" y="84" text-anchor="middle" font-size="12" fill="white" font-weight="700">2</text>
+          <text x="282" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">🎫 Ticket Generado</text>
+          <text x="282" y="132" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Sistema asigna</text>
+          <text x="282" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">turno automático</text>
+          <text x="282" y="168" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Impresión de ticket</text>
+          <text x="282" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">SMS o notificación</text>
+          <text x="282" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Prioridad respetada</text>
+
+          <line x1="360" y1="130" x2="400" y2="130" stroke="#f59e0b" stroke-width="2.2" marker-end="url(#dtArrow)"/>
+
+          <!-- Paso 3 -->
+          <rect x="405" y="50" width="155" height="175" rx="12" fill="white" stroke="#f59e0b" stroke-width="2.2" filter="url(#dtShadow)"/>
+          <rect x="405" y="50" width="155" height="30" rx="12" fill="url(#dtGrad)"/>
+          <rect x="405" y="65" width="155" height="15" fill="url(#dtGrad)"/>
+          <circle cx="420" cy="65" r="11" fill="rgba(255,255,255,0.2)"/>
+          <text x="420" y="69" text-anchor="middle" font-size="11" fill="white" font-weight="700">3</text>
+          <text x="488" y="69" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="white">⌛ Espera</text>
+          <text x="482" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">Usuario espera</text>
+          <text x="482" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">cómodamente</text>
+          <text x="482" y="138" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Ve su turno en</text>
+          <text x="482" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">pantalla del salón</text>
+          <text x="482" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Tiempo estimado</text>
+          <text x="482" y="195" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">visible en panel</text>
+
+          <line x1="560" y1="130" x2="600" y2="130" stroke="#f59e0b" stroke-width="2.2" marker-end="url(#dtArrow)"/>
+
+          <!-- Paso 4 -->
+          <rect x="605" y="55" width="155" height="165" rx="12" fill="white" stroke="#0072a1" stroke-width="2" filter="url(#dtShadow)"/>
+          <rect x="605" y="55" width="155" height="28" rx="12" fill="url(#dtBlue)"/>
+          <rect x="605" y="69" width="155" height="14" fill="url(#dtBlue)"/>
+          <text x="682" y="74" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="white">📢 Llamado</text>
+          <text x="682" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">Panel muestra</text>
+          <text x="682" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">turno + caja</text>
+          <text x="682" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Audio multilingüe</text>
+          <text x="682" y="165" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Voz sintetizada</text>
+          <text x="682" y="185" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Pantalla TV/Monitor</text>
+          <text x="682" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Tablet del agente</text>
+
+          <line x1="760" y1="130" x2="800" y2="130" stroke="#f59e0b" stroke-width="2.2" marker-end="url(#dtArrow)"/>
+
+          <!-- Paso 5 -->
+          <rect x="805" y="55" width="155" height="165" rx="12" fill="white" stroke="#10b981" stroke-width="2.2" filter="url(#dtShadow)"/>
+          <rect x="805" y="55" width="155" height="28" rx="12" fill="url(#dtDone)"/>
+          <rect x="805" y="69" width="155" height="14" fill="url(#dtDone)"/>
+          <circle cx="820" cy="69" r="11" fill="rgba(255,255,255,0.2)"/>
+          <text x="820" y="73" text-anchor="middle" font-size="11" fill="white" font-weight="700">5</text>
+          <text x="888" y="73" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="white">✅ Atendido</text>
+          <text x="882" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">Agente atiende</text>
+          <text x="882" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#475569">al usuario</text>
+          <text x="882" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Registro de tiempo</text>
+          <text x="882" y="165" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Calificación opcional</text>
+          <text x="882" y="185" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Estadística generada</text>
+
+          <!-- Paso 6 -->
+          <rect x="975" y="55" width="110" height="165" rx="12" fill="white" stroke="#e2e8f0" filter="url(#dtShadow)"/>
+          <circle cx="1030" cy="80" r="13" fill="url(#dtGrad)"/>
+          <text x="1030" y="84" text-anchor="middle" font-size="12" fill="white" font-weight="700">6</text>
+          <text x="1030" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">📊 Reporte</text>
+          <text x="1030" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Dashboard</text>
+          <text x="1030" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">en tiempo</text>
+          <text x="1030" y="172" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">real</text>
+
+          <!-- Barra inferior -->
+          <rect x="15" y="260" width="1070" height="52" rx="12" fill="rgba(245,158,11,0.05)" stroke="#fcd34d" stroke-dasharray="6,3"/>
+          <text x="550" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#d97706">📊 Estadísticas automáticas: tiempos de espera promedio · tickets atendidos por caja · productividad por agente · hora pico</text>
+          <text x="550" y="302" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Datos exportables a CSV/Excel · Histórico completo de atenciones · Cumplimiento de metas de servicio</text>
+
+          <!-- Footer label -->
+          <rect x="300" y="340" width="500" height="26" rx="12" fill="rgba(245,158,11,0.08)"/>
+          <text x="550" y="358" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#d97706">Basado en NovoSGA · Open Source · 12+ años de desarrollo · Comunidad global activa</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANELES Y PANTALLAS -->
+  <section class="section" id="paneles">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Experiencia de Usuario</span>
+        <h2 class="section-title">Paneles de llamado y <span class="text-gradient">experiencia de espera</span></h2>
+        <p class="section-subtitle">Múltiples tipos de pantalla para cada necesidad: desde el kiosco de autoservicio hasta el panel de TV en sala de espera y la pantalla del agente.</p>
+      </div>
+      <div class="flujo-mapa">
+        <svg viewBox="0 0 1100 480" xmlns="http://www.w3.org/2000/svg" class="flujo-svg">
+          <defs>
+            <filter id="panShadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.1"/></filter>
+            <linearGradient id="panGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Kiosco -->
+          <rect x="20" y="20" width="240" height="220" rx="14" fill="white" stroke="#e2e8f0" filter="url(#panShadow)"/>
+          <rect x="20" y="20" width="240" height="32" rx="14" fill="url(#panGrad)"/>
+          <rect x="20" y="38" width="240" height="14" fill="url(#panGrad)"/>
+          <text x="140" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">🖥️ Kiosco de Autoservicio</text>
+          <text x="140" y="75" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Pantalla táctil donde el usuario</text>
+          <text x="140" y="93" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">selecciona el servicio</text>
+          <rect x="40" y="108" width="200" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="140" y="127" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1e293b">💼 Trámites</text>
+          <rect x="40" y="142" width="200" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="140" y="161" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1e293b">📄 Documentos</text>
+          <rect x="40" y="176" width="200" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="140" y="195" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1e293b">💰 Pagos y Caja</text>
+          <text x="140" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">También disponible como panel web</text>
+
+          <!-- TV Panel -->
+          <rect x="285" y="20" width="370" height="220" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" filter="url(#panShadow)"/>
+          <text x="470" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="white">📺 Panel de Sala de Espera (TV)</text>
+          <rect x="305" y="70" width="330" height="45" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)"/>
+          <text x="470" y="90" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#4ade80">EN ATENCIÓN</text>
+          <text x="470" y="108" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="900" fill="white">A042 → Caja 3</text>
+          <rect x="305" y="125" width="330" height="55" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+          <text x="330" y="150" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">Próximos:</text>
+          <text x="430" y="150" font-family="Inter,sans-serif" font-size="11" fill="#cbd5e1">A043 · P012 · A044 · A045 · P013</text>
+          <text x="330" y="172" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">Tiempo estimado de espera:</text>
+          <text x="535" y="172" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fbbf24">~ 8 min</text>
+          <text x="470" y="210" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Personalizable con logo, colores y videos institucionales</text>
+
+          <!-- Agente -->
+          <rect x="680" y="20" width="400" height="220" rx="14" fill="white" stroke="#e2e8f0" filter="url(#panShadow)"/>
+          <rect x="680" y="20" width="400" height="32" rx="14" fill="#0072a1"/>
+          <rect x="680" y="38" width="400" height="14" fill="#0072a1"/>
+          <text x="880" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">💻 Pantalla del Agente</text>
+          <text x="880" y="75" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#475569">Interfaz web para el funcionario que atiende</text>
+          <rect x="700" y="92" width="360" height="55" rx="8" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.2)"/>
+          <text x="720" y="112" font-family="Inter,sans-serif" font-size="11" fill="#475569">Turno actual:</text>
+          <text x="860" y="112" font-family="Inter,sans-serif" font-size="22" font-weight="900" fill="#059669">A042</text>
+          <text x="720" y="135" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Tiempo de atención: 4:23</text>
+          <text x="960" y="135" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0072a1">Finalizar ✓</text>
+          <text x="720" y="170" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Próximo en fila: A043 (2 en espera para este servicio)</text>
+          <text x="720" y="195" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Servicio: Trámites · Caja 3 · Atendidos hoy: 27</text>
+          <text x="720" y="220" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Tecla rápida: F2 = Llamar siguiente · F3 = Transferir · F4 = Pausa</text>
+
+          <!-- Funcionalidades debajo -->
+          <text x="550" y="275" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Funcionalidades de los Paneles</text>
+
+          <rect x="20" y="295" width="250" height="80" rx="10" fill="white" stroke="#e2e8f0" filter="url(#panShadow)"/>
+          <text x="145" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#d97706">🔊 Audio Multilingüe</text>
+          <text x="145" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Voz sintetizada ES/EN/PT</text>
+          <text x="145" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Volumen y velocidad ajustable</text>
+
+          <rect x="290" y="295" width="250" height="80" rx="10" fill="white" stroke="#e2e8f0" filter="url(#panShadow)"/>
+          <text x="415" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#d97706">🎨 Personalización Total</text>
+          <text x="415" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Logo, colores, fuentes y video</text>
+          <text x="415" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Institucional en la sala de espera</text>
+
+          <rect x="560" y="295" width="250" height="80" rx="10" fill="white" stroke="#e2e8f0" filter="url(#panShadow)"/>
+          <text x="685" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#d97706">⭐ Prioridad Visual</text>
+          <text x="685" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Turnos prioritarios resaltados</text>
+          <text x="685" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Adulto mayor, embarazada, PcD</text>
+
+          <rect x="830" y="295" width="250" height="80" rx="10" fill="white" stroke="#e2e8f0" filter="url(#panShadow)"/>
+          <text x="955" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#d97706">📱 Multi-dispositivo</text>
+          <text x="955" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">TV, monitor, tablet, celular</text>
+          <text x="955" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Funciona en cualquier navegador</text>
+
+          <!-- Nota -->
+          <rect x="200" y="430" width="700" height="32" rx="10" fill="rgba(245,158,11,0.06)" stroke="#fcd34d" stroke-width="1" stroke-dasharray="4,2"/>
+          <text x="550" y="451" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#d97706">Kiosco táctil opcional con hardware certificado · Impresora térmica para ticket físico · Integración con SMS y notificaciones push</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todas las funcionalidades de <span class="text-gradient">Digiturno</span></h2>
+        <p class="section-subtitle">Basado en NovoSGA, el sistema más completo de gestión de turnos. Cada funcionalidad está pensada para mejorar la experiencia de tus usuarios y la eficiencia de tu equipo.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🎫</span>
+          <div>
+            <h4>Gestión de Turnos</h4>
+            <p>Generación de tickets con numeración automática. Múltiples servicios configurables. Prioridad para adultos mayores, embarazadas y PcD.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📺</span>
+          <div>
+            <h4>Panel de TV / Monitor</h4>
+            <p>Pantalla de sala de espera con turno actual, próximos y tiempo estimado. Totalmente personalizable con logo y colores institucionales.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔊</span>
+          <div>
+            <h4>Llamado por Audio</h4>
+            <p>Voz sintetizada en español, inglés y portugués. Anuncia el turno y la caja automáticamente. Volumen y velocidad configurables.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🖥️</span>
+          <div>
+            <h4>Kiosco de Autoservicio</h4>
+            <p>Pantalla táctil para que el usuario seleccione el servicio sin intervención del personal. Con impresión de ticket o notificación digital.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">👥</span>
+          <div>
+            <h4>Múltiples Agentes y Cajas</h4>
+            <p>Cada funcionario tiene su panel para llamar al siguiente turno. Transferencia entre servicios, pausas y reanudación con registro de tiempos.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⭐</span>
+          <div>
+            <h4>Atención Prioritaria</h4>
+            <p>Tipos de prioridad configurables: adulto mayor, embarazada, persona con discapacidad, VIP. El sistema intercala automáticamente.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📊</span>
+          <div>
+            <h4>Dashboard y Reportes</h4>
+            <p>Estadísticas en tiempo real: tiempos de espera, productividad por agente, horas pico, tickets atendidos. Exportable a CSV/Excel.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌐</span>
+          <div>
+            <h4>100% Web</h4>
+            <p>No requiere instalar software. Todo funciona desde el navegador. Compatible con Windows, macOS, Linux, Android y iOS.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <div>
+            <h4>Notificaciones Móviles</h4>
+            <p>Envío de SMS o notificaciones push cuando el turno está próximo. El usuario no necesita estar mirando la pantalla fijamente.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔌</span>
+          <div>
+            <h4>API REST</h4>
+            <p>Integra Digiturno con tus sistemas existentes. API documentada para generar tickets, consultar filas y obtener estadísticas.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌍</span>
+          <div>
+            <h4>Multi-idioma</h4>
+            <p>Interfaz en español, inglés y portugués. Traducciones completas para usuarios y administradores en los tres idiomas.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔐</span>
+          <div>
+            <h4>Roles y Permisos</h4>
+            <p>Control de acceso granular: administrador, supervisor, agente y monitor. Cada rol ve solo lo que necesita para su trabajo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORES -->
+  <section class="section" id="sectores">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">¿Dónde se usa?</span>
+        <h2 class="section-title">Sectores que se benefician de <span class="text-gradient">Digiturno</span></h2>
+        <p class="section-subtitle">Cualquier organización con atención presencial al público puede transformar su operación. Estos son los sectores que más lo usan.</p>
+      </div>
+      <div class="channels-grid">
+        <div class="channel-card">
+          <div class="channel-icon">🏛️</div>
+          <h4>Gobierno y Entidades Públicas</h4>
+          <p>Alcaldías, gobernaciones, registradurías, notarías, secretarías de hacienda y tránsito.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🏥</div>
+          <h4>Salud</h4>
+          <p>Hospitales, clínicas, EPS, IPS, centros de vacunación, laboratorios clínicos y consultorios.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🏦</div>
+          <h4>Banca y Finanzas</h4>
+          <p>Bancos, cooperativas, fondos de empleados, casas de cambio y entidades financieras.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🎓</div>
+          <h4>Educación</h4>
+          <p>Universidades, colegios, centros de admisiones, registro académico y secretarías de educación.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">⚖️</div>
+          <h4>Justicia</h4>
+          <p>Juzgados, fiscalías, defensorías del pueblo, centros de conciliación y comisarías de familia.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🏢</div>
+          <h4>Servicios</h4>
+          <p>Empresas de servicios públicos, telecomunicaciones, trámites vehiculares y atención al cliente.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">📦</div>
+          <h4>Logística y Retail</h4>
+          <p>Centros de distribución, puntos de recogida, servicio postventa y grandes superficies.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🛂</div>
+          <h4>Migración y Fronteras</h4>
+          <p>Oficinas de migración, consulados, embajadas y puestos de control fronterizo.</p>
+        </div>
+        <div class="channel-card">
+          <div class="channel-icon">🏢</div>
+          <h4>Empresa Privada</h4>
+          <p>Call centers presenciales, oficinas de recursos humanos, atención a proveedores y recepción.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section section-alt" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resultados <span class="text-gradient">que se miden</span></h2>
+        <p class="section-subtitle">Las organizaciones que implementan Digiturno experimentan mejoras inmediatas en orden, percepción del usuario y productividad.</p>
+      </div>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <span class="beneficio-number">40%</span>
+          <span class="beneficio-label">reducción en tiempo de espera</span>
+          <p>La organización inteligente de la fila y la priorización automática reducen drásticamente la espera promedio.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">90%</span>
+          <span class="beneficio-label">satisfacción del usuario</span>
+          <p>Los usuarios saben cuánto esperarán y pueden sentarse. La transparencia mejora radicalmente la percepción del servicio.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">0</span>
+          <span class="beneficio-label">filas físicas de pie</span>
+          <p>Se eliminan las aglomeraciones, los roces entre usuarios y el estrés de "quién llegó primero". Orden total desde el minuto uno.</p>
+        </div>
+        <div class="beneficio-card">
+          <span class="beneficio-number">100%</span>
+          <span class="beneficio-label">trazabilidad de atención</span>
+          <p>Cada turno, cada llamado, cada tiempo queda registrado. Datos exactos para mejorar continuamente la operación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Implementación <span class="text-gradient">a tu medida</span></h2>
+        <p class="section-subtitle">Desde una sola sede con 2 cajas hasta una red nacional con cientos de puntos de atención. Digiturno escala contigo.</p>
+      </div>
+      <div class="planes-grid">
+        <div class="plan-card">
+          <div class="plan-icon">☁️</div>
+          <h3>Digiturno SaaS</h3>
+          <p class="plan-desc">Poliedro gestiona el servidor. Tú solo necesitas un navegador y una pantalla. Sin complicaciones técnicas, sin instalar nada.</p>
+          <ul class="plan-features">
+            <li>Infraestructura 100% gestionada</li>
+            <li>Actualizaciones automáticas</li>
+            <li>Soporte 24/7 en español</li>
+            <li>Backups diarios incluidos</li>
+          </ul>
+        </div>
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">Recomendado</div>
+          <div class="plan-icon">🏠</div>
+          <h3>Self-Hosted</h3>
+          <p class="plan-desc">Instala Digiturno en tu propia infraestructura. Control total sobre datos y servidores. Ideal para entidades con requisitos de seguridad y soberanía.</p>
+          <ul class="plan-features">
+            <li>Datos 100% en tus servidores</li>
+            <li>Personalización total de la interfaz</li>
+            <li>Integración con intranet y LDAP</li>
+            <li>Soporte profesional de Poliedro</li>
+          </ul>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🎓</div>
+          <h3>Acompañamiento</h3>
+          <p class="plan-desc">Consultoría, instalación, configuración de servicios y pantallas, capacitación de funcionarios y administradores. Te acompañamos de principio a fin.</p>
+          <ul class="plan-features">
+            <li>Levantamiento de necesidades</li>
+            <li>Configuración de servicios y pantallas</li>
+            <li>Capacitación por roles</li>
+            <li>Soporte post-implementación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container cta-container">
+      <h2 class="cta-title">¿Listo para eliminar las filas en tu organización?</h2>
+      <p class="cta-subtitle">Agenda una demo personalizada. Te mostramos Digiturno en acción con pantallas, audio y estadísticas en tiempo real.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-lg">Solicitar Demo</a>
+        <a href="#" class="btn btn-outline-white btn-lg">Hablar con un asesor</a>
+        <a href="brochure.html" class="btn btn-brochure-dark btn-lg">Descargar Brochure</a>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-item">
+          <span>📧</span> poliedrosoftware@gmail.com
+        </div>
+        <div class="cta-contact-item">
+          <span>📞</span> +57 315 7690579
+        </div>
+        <div class="cta-contact-item">
+          <span>🌐</span> poliedrosoftware.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo_poliedro.png" alt="Poliedro" class="footer-logo">
+        <p>Implementamos Digiturno, basado en NovoSGA: el sistema de gestión de turnos open source más usado del mundo. Orden, eficiencia y dignidad para tus usuarios.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Producto</h5>
+          <a href="#que-es">¿Qué es Digiturno?</a>
+          <a href="#flujo">Flujo de atención</a>
+          <a href="#paneles">Paneles y Pantallas</a>
+          <a href="#features">Funcionalidades</a>
+        </div>
+        <div class="footer-col">
+          <h5>Implementación</h5>
+          <a href="#planes">Planes</a>
+          <a href="#sectores">Sectores</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#">Documentación NovoSGA</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="#contacto">Demo</a>
+          <a href="#">Soporte</a>
+          <a href="#">Consultoría</a>
+          <a href="#">Poliedro</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Poliedro. Todos los derechos reservados. Digiturno está basado en NovoSGA (MIT License). NovoSGA es desarrollado por su comunidad open source.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/573157690579" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatea por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 54.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
