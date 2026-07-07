@@ -33,3 +33,10 @@ services:
     ports:
       - "8084:80"
     restart: unless-stopped
+
+  master:
+    build: ./master
+    container_name: fanpage-master
+    ports:
+      - "80:80"
+    restart: unless-stopped

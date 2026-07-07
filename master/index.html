@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poliedro | Soluciones Digitales Empresariales</title>
+  <meta name="description" content="Poliedro: transformación digital para tu empresa. PQRS, Nextcloud, Odoo ERP, Odoo Restaurant y Digiturno. Soluciones open source con soporte profesional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo_poliedro.png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+      <button id="zammad-feedback-form" class="btn btn-primary btn-sm">Contáctanos</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Soluciones Empresariales</span>
+        </div>
+        <h1 class="hero-title">
+          Transformación digital <span class="text-gradient">con propósito</span>
+        </h1>
+        <p class="hero-subtitle">
+          Implementamos soluciones open source de clase mundial con soporte profesional en Colombia. PQRS, nube privada, ERP, gestión de turnos y más. Tecnología que funciona para tu organización.
+        </p>
+        <div class="hero-cta">
+          <a href="#servicios" class="btn btn-primary btn-lg">Explorar soluciones</a>
+          <a href="#" id="zammad-feedback-form-hero" class="btn btn-outline btn-lg">Hablar con un asesor</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-grid">
+          <div class="hv-card hv-pqrs">
+            <span class="hv-icon">📋</span>
+            <span class="hv-label">PQRS</span>
+          </div>
+          <div class="hv-card hv-nextcloud">
+            <span class="hv-icon">☁️</span>
+            <span class="hv-label">Nextcloud</span>
+          </div>
+          <div class="hv-card hv-odoo">
+            <span class="hv-icon">📊</span>
+            <span class="hv-label">Odoo ERP</span>
+          </div>
+          <div class="hv-card hv-resto">
+            <span class="hv-icon">🍽️</span>
+            <span class="hv-label">Odoo Restaurant</span>
+          </div>
+          <div class="hv-card hv-digiturno">
+            <span class="hv-icon">🎫</span>
+            <span class="hv-label">Digiturno</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nuestras <span class="text-gradient">soluciones</span></h2>
+        <p class="section-subtitle">Cada solución está basada en software open source de primer nivel, adaptada al contexto colombiano e implementada con soporte profesional de Poliedro.</p>
+      </div>
+
+      <!-- PQRS -->
+      <div class="servicio-row">
+        <div class="servicio-visual svis-pqrs">
+          <div class="servicio-badge sbadge-pqrs">Software PQRS</div>
+          <h3>Zammad para PQRS</h3>
+          <p>Gestión inteligente de Peticiones, Quejas, Reclamos y Sugerencias. Centraliza todos los canales, automatiza con IA y cumple con los tiempos legales.</p>
+          <ul class="servicio-features">
+            <li>Clasificación automática con IA</li>
+            <li>Panel de PQRS en tiempo real</li>
+            <li>SLA y escalaciones automáticas</li>
+            <li>Portal de autogestión para usuarios</li>
+            <li>WhatsApp, Email, Chat, Teléfono</li>
+            <li>Trazabilidad completa y auditoría</li>
+          </ul>
+          <a href="https://www.poliedrocloud.com/pqrs" class="btn btn-servicio btn-servicio-pqrs">Ver detalles completos →</a>
+        </div>
+        <div class="servicio-mockup">
+          <div class="mockup-card mockup-pqrs">
+            <div class="mockup-header"><span>Panel PQRS</span></div>
+            <div class="mockup-body">
+              <div class="mockup-row"><span class="mockup-tag tag-blue">📝 Petición #1042</span><span class="mockup-status">Baja</span></div>
+              <div class="mockup-row"><span class="mockup-tag tag-yellow">⚠️ Queja #1041</span><span class="mockup-status">Alta</span></div>
+              <div class="mockup-row"><span class="mockup-tag tag-red">🔴 Reclamo #1040</span><span class="mockup-status">Urgente</span></div>
+              <div class="mockup-row"><span class="mockup-tag tag-green">💡 Sugerencia #1039</span><span class="mockup-status">Nueva</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nextcloud -->
+      <div class="servicio-row servicio-row-reverse">
+        <div class="servicio-mockup">
+          <div class="mockup-card mockup-nextcloud">
+            <div class="mockup-header"><span>Nextcloud Files</span></div>
+            <div class="mockup-body">
+              <div class="mockup-row"><span class="mockup-file">📁 Proyectos 2026</span></div>
+              <div class="mockup-row"><span class="mockup-file">📄 Informe_Gestion.pdf</span></div>
+              <div class="mockup-row"><span class="mockup-file">🖼️ Fotos_Evento.zip</span></div>
+              <div class="mockup-row"><span class="mockup-file">📊 Presupuesto.xlsx</span></div>
+            </div>
+            <div class="mockup-sync">Sincronización activa — 3 dispositivos</div>
+          </div>
+        </div>
+        <div class="servicio-visual svis-nextcloud">
+          <div class="servicio-badge sbadge-nextcloud">Nube Privada</div>
+          <h3>Nextcloud Enterprise</h3>
+          <p>Tu propia nube privada con sincronización de archivos, colaboración en tiempo real y soberanía total sobre tus datos. La alternativa open source a Google Drive y Office 365.</p>
+          <ul class="servicio-features">
+            <li>Sincronización Desktop + Móvil + Web</li>
+            <li>Compartición segura con enlaces protegidos</li>
+            <li>Cifrado de extremo a extremo</li>
+            <li>Collabora Online (edición en equipo)</li>
+            <li>Videollamadas con Nextcloud Talk</li>
+            <li>GDPR, HIPAA y soberanía de datos</li>
+          </ul>
+          <a href="https://www.poliedrocloud.com/nextcloud" class="btn btn-servicio btn-servicio-nextcloud">Ver detalles completos →</a>
+        </div>
+      </div>
+
+      <!-- Odoo Contabilidad -->
+      <div class="servicio-row">
+        <div class="servicio-visual svis-odoo">
+          <div class="servicio-badge sbadge-odoo">ERP Empresarial</div>
+          <h3>Odoo Enterprise Colombia</h3>
+          <p>ERP integrado con localización colombiana. Facturación electrónica DIAN, inventario, ventas, compras y contabilidad NIIF. Ideal para retail, mayoristas y distribuidores.</p>
+          <ul class="servicio-features">
+            <li>Facturación electrónica DIAN integrada</li>
+            <li>POS para retail (mayor y detal)</li>
+            <li>Inventario multi-almacén con trazabilidad</li>
+            <li>Contabilidad NIIF + impuestos COL</li>
+            <li>CRM y portal de clientes B2B</li>
+            <li>E-commerce integrado</li>
+          </ul>
+          <a href="https://www.poliedrocloud.com/odoo" class="btn btn-servicio btn-servicio-odoo">Ver detalles completos →</a>
+        </div>
+        <div class="servicio-mockup">
+          <div class="mockup-card mockup-odoo">
+            <div class="mockup-header"><span>Panel de Ventas</span></div>
+            <div class="mockup-body">
+              <div class="mockup-kpi-row">
+                <div class="mockup-kpi"><strong>$48.2M</strong><small>Ventas mes</small></div>
+                <div class="mockup-kpi"><strong>1,247</strong><small>Órdenes</small></div>
+                <div class="mockup-kpi"><strong>94%</strong><small>Entregas</small></div>
+              </div>
+              <div class="mockup-bars">
+                <span class="mockup-bar h60"></span><span class="mockup-bar h45"></span><span class="mockup-bar h80"></span><span class="mockup-bar h55"></span><span class="mockup-bar h90"></span><span class="mockup-bar h70"></span><span class="mockup-bar h95 activo"></span>
+              </div>
+              <div class="mockup-modules">
+                <span>📄 FE</span><span>💰 Ventas</span><span>📦 Inventario</span><span>📊 Contabilidad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Odoo Restaurant -->
+      <div class="servicio-row servicio-row-reverse">
+        <div class="servicio-mockup">
+          <div class="mockup-card mockup-resto">
+            <div class="mockup-header"><span>POS Restaurant</span></div>
+            <div class="mockup-body">
+              <div class="mockup-salon">
+                <span class="mesa libre">T1</span><span class="mesa ocupada">T2</span><span class="mesa libre">T3</span>
+                <span class="mesa pagar">S1</span><span class="mesa libre">S2</span><span class="mesa ocupada">S3</span>
+                <span class="mesa reservada">V1</span><span class="mesa libre">S4</span><span class="mesa libre">S5</span>
+              </div>
+              <div class="mockup-orden">Mesa 4 · Orden #287 · $78,500</div>
+            </div>
+            <div class="mockup-kds">👨‍🍳 Cocina: 2 órdenes activas</div>
+          </div>
+        </div>
+        <div class="servicio-visual svis-resto">
+          <div class="servicio-badge sbadge-resto">Gestión de Restaurantes</div>
+          <h3>Odoo Restaurant</h3>
+          <p>POS táctil con gestión de mesas, Kitchen Display para cocina, control de inventario de ingredientes, recetas con costeo automático y facturación electrónica DIAN.</p>
+          <ul class="servicio-features">
+            <li>POS táctil con plano de mesas</li>
+            <li>Kitchen Display System (KDS)</li>
+            <li>Recetas y costeo automático de platos</li>
+            <li>Inventario de ingredientes en tiempo real</li>
+            <li>Compras automáticas por stock mínimo</li>
+            <li>Reportes de rentabilidad por plato</li>
+          </ul>
+          <a href="https://www.poliedrocloud.com/odoo-restaurante" class="btn btn-servicio btn-servicio-resto">Ver detalles completos →</a>
+        </div>
+      </div>
+
+      <!-- Digiturno -->
+      <div class="servicio-row">
+        <div class="servicio-visual svis-digiturno">
+          <div class="servicio-badge sbadge-digiturno">Gestión de Turnos</div>
+          <h3>Digiturno</h3>
+          <p>Sistema de gestión de turnos y filas basado en NovoSGA. Ticket digital, paneles de TV, llamado por audio y estadísticas en tiempo real. Elimina las filas físicas.</p>
+          <ul class="servicio-features">
+            <li>Ticket digital y físico</li>
+            <li>Paneles de TV para sala de espera</li>
+            <li>Llamado por audio multilingüe</li>
+            <li>Prioridad para adulto mayor y PcD</li>
+            <li>Dashboard y estadísticas en vivo</li>
+            <li>Kiosco de autoservicio táctil</li>
+          </ul>
+          <a href="https://www.poliedrocloud.com/digiturnos" class="btn btn-servicio btn-servicio-digiturno">Ver detalles completos →</a>
+        </div>
+        <div class="servicio-mockup">
+          <div class="mockup-card mockup-digiturno">
+            <div class="mockup-header"><span>Panel de Llamado</span></div>
+            <div class="mockup-body">
+              <div class="mockup-turno-actual">
+                <span>En atención</span>
+                <strong>A042 → Caja 3</strong>
+              </div>
+              <div class="mockup-fila">
+                <span class="fila-turno llamado">A042</span>
+                <span class="fila-turno">A043</span>
+                <span class="fila-turno prioridad">P012</span>
+                <span class="fila-turno">A044</span>
+              </div>
+              <div class="mockup-espera">Tiempo estimado: ~8 min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="section section-alt" id="nosotros">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Por qué <span class="text-gradient">Poliedro</span>?</h2>
+        <p class="section-subtitle">Somos un equipo de ingenieros colombianos especializados en software open source empresarial. Implementamos, personalizamos y damos soporte a soluciones que transforman organizaciones.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon card-icon-blue">🇨🇴</div>
+          <h3 class="card-title">Talento Colombiano</h3>
+          <p class="card-text">Equipo 100% local con conocimiento profundo del contexto normativo y empresarial colombiano. Hablamos tu idioma, conocemos tus necesidades.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-teal">🔓</div>
+          <h3 class="card-title">Open Source</h3>
+          <p class="card-text">Todas nuestras soluciones están basadas en software de código abierto. Sin licencias costosas, sin vendor lock-in. Tú eres dueño de tu infraestructura.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-dark">🎯</div>
+          <h3 class="card-title">Soporte Profesional</h3>
+          <p class="card-text">No solo instalamos: configuramos, capacitamos y damos soporte continuo. Acompañamiento real en cada etapa: implementación, go-live y post-producción.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container cta-container">
+      <h2 class="cta-title">¿Listo para transformar tu organización?</h2>
+      <p class="cta-subtitle">Cuéntanos qué necesitas y te recomendamos la mejor solución. Sin compromiso, sin costo.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-lg" id="zammad-feedback-form-cta">Solicitar Asesoría</a>
+        <a href="#" class="btn btn-outline-white btn-lg">Agendar llamada</a>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-contact-item">
+          <span>📧</span> poliedrosoftware@gmail.com
+        </div>
+        <div class="cta-contact-item">
+          <span>📞</span> +57 315 7690579
+        </div>
+        <div class="cta-contact-item">
+          <span>🌐</span> poliedrosoftware.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo_poliedro.png" alt="Poliedro" class="footer-logo">
+        <p>Transformación digital con tecnología open source y soporte profesional en Colombia.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Soluciones</h5>
+          <a href="https://www.poliedrocloud.com/pqrs">PQRS (Zammad)</a>
+          <a href="https://www.poliedrocloud.com/nextcloud">Nextcloud</a>
+          <a href="https://www.poliedrocloud.com/odoo">Odoo ERP</a>
+          <a href="https://www.poliedrocloud.com/odoo-restaurante">Odoo Restaurant</a>
+          <a href="https://www.poliedrocloud.com/digiturnos">Digiturno</a>
+        </div>
+        <div class="footer-col">
+          <h5>Empresa</h5>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Poliedro. Todos los derechos reservados. Las marcas mencionadas pertenecen a sus respectivos dueños.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/573157690579" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatea por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 54.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <!-- FLOATING CHAT BUTTON -->
+  <button class="chat-float open-zammad-chat" aria-label="Abrir chat en vivo">
+    <div class="chat-float-avatar">
+      <svg viewBox="0 0 64 64" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="22" r="12" fill="white" opacity="0.95"/>
+        <ellipse cx="32" cy="50" rx="18" ry="12" fill="white" opacity="0.95"/>
+        <rect x="20" y="23" width="24" height="2" rx="1" fill="#0072a1" opacity="0.3"/>
+        <path d="M32 1C31.2 1 30.5 1.6 30.5 2.5V10H24C22.9 10 22 10.9 22 12C22 13.1 22.9 14 24 14H30.5V21.5C30.5 22.3 31.2 23 32 23C32.8 23 33.5 22.3 33.5 21.5V14H40C41.1 14 42 13.1 42 12C42 10.9 41.1 10 40 10H33.5V2.5C33.5 1.6 32.8 1 32 1Z" fill="#0072a1"/>
+        <circle cx="32" cy="32" r="31" stroke="white" stroke-width="1.5" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="chat-float-pulse"></div>
+    <span class="chat-float-label">Chat en vivo</span>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script id="zammad_form_script" src="https://pqrs.poliedroauth.com/assets/form/form.js"></script>
+  <script>
+  jQuery(function($) {
+    var fc = { messageTitle: 'Formulario de comentarios', messageSubmit: 'Enviar', messageThankYou: '¡Gracias por tu consulta (#%s)! Nos pondremos en contacto contigo lo antes posible.', modal: true };
+    $('#zammad-feedback-form').ZammadForm(fc);
+    $('#zammad-feedback-form-hero').ZammadForm(fc);
+    $('#zammad-feedback-form-cta').ZammadForm(fc);
+  });
+  </script>
+  <script src="https://pqrs.poliedroauth.com/assets/chat/chat-no-jquery.min.js"></script>
+  <script>
+  (function() {
+    var chat = new ZammadChat({ background: '#3eb5f0', fontSize: '12px', chatId: 1, show: false });
+    document.querySelector('.chat-float').addEventListener('click', function() { if (typeof chat.show === 'function') chat.show(); });
+  })();
+  </script>
+</body>
+</html>
