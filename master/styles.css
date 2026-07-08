@@ -262,13 +262,16 @@ body { font-family: var(--font); color: var(--gray-800); background: var(--white
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 0; font-size: 0.8rem; text-align: center; opacity: 0.5; }
 
 /* ===== WHATSAPP ===== */
-.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; text-decoration: none; }
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px; z-index: 999; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; text-decoration: none; }
 .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
 
 /* ===== CALL FLOATING BUTTON ===== */
 .llamar-float {
   position: fixed;
-  bottom: 180px;
+  bottom: 100px;
   right: 24px;
   z-index: 997;
   width: 60px;
@@ -290,7 +293,7 @@ body { font-family: var(--font); color: var(--gray-800); background: var(--white
 
 /* ===== CHAT FLOATING BUTTON ===== */
 .chat-float {
-  position: fixed; bottom: 100px; right: 24px; z-index: 998;
+  position: fixed; bottom: 176px; right: 24px; z-index: 998;
   width: 64px; height: 64px;
   background: linear-gradient(135deg, #0072a1, #2d97bf);
   border: none; border-radius: 50%;
@@ -360,3 +363,21 @@ body { font-family: var(--font); color: var(--gray-800); background: var(--white
 /* ===== ANIMATIONS ===== */
 .animate-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .animate-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FLOATING BUTTONS REFINED ===== */
+.whatsapp-float { width: 48px !important; height: 48px !important; left: 16px !important; bottom: 24px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important; }
+.whatsapp-float:hover { transform: scale(1.08) !important; box-shadow: 0 4px 16px rgba(37,211,102,0.35) !important; }
+.whatsapp-float::after { content: 'WhatsApp'; position: absolute; left: 56px; background: #333; color: white; font-size: 0.7rem; font-weight: 500; padding: 0.3rem 0.7rem; border-radius: 4px; white-space: nowrap; opacity: 0; transform: translateX(-6px); transition: all 0.25s ease; pointer-events: none; }
+.whatsapp-float:hover::after { opacity: 1; transform: translateX(0); }
+.llamar-float { width: 48px !important; height: 48px !important; left: 16px !important; bottom: 88px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important; }
+.llamar-float:hover { transform: scale(1.08) !important; box-shadow: 0 4px 16px rgba(16,185,129,0.35) !important; }
+.llamar-float::after { content: 'Llamar'; position: absolute; left: 56px; background: #333; color: white; font-size: 0.7rem; font-weight: 500; padding: 0.3rem 0.7rem; border-radius: 4px; white-space: nowrap; opacity: 0; transform: translateX(-6px); transition: all 0.25s ease; pointer-events: none; }
+.llamar-float:hover::after { opacity: 1; transform: translateX(0); }
+.chat-float { width: 52px !important; height: 52px !important; left: 16px !important; bottom: 152px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important; }
+.chat-float:hover { transform: scale(1.08) !important; box-shadow: 0 4px 16px rgba(0,114,161,0.35) !important; }
+.chat-float::after { content: 'Chat en vivo'; position: absolute; right: 64px; background: #333; color: white; font-size: 0.7rem; font-weight: 500; padding: 0.3rem 0.7rem; border-radius: 4px; white-space: nowrap; opacity: 0; transform: translateX(-6px); transition: all 0.25s ease; pointer-events: none; }
+.chat-float:hover::after { opacity: 1; transform: translateX(0); }
+
+.chat-float-pulse { position: absolute; inset: -3px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.3); animation: chat-pulse 2s ease-in-out infinite; pointer-events: none; }
+@keyframes chat-pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.12); opacity: 0.4; } }
+.chat-float:hover .chat-float-label { opacity: 1 !important; transform: translateX(0) !important; }

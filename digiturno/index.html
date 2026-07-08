@@ -3,8 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digiturno | Sistema de Gestión de Turnos y Filas | Poliedro</title>
-  <meta name="description" content="Digiturno: sistema inteligente de gestión de turnos y filas basado en NovoSGA. Paneles de llamado, ticket digital, estadísticas y multi-servicio. Open Source.">
+  <title>Digiturno | Sistema de Gestión de Turnos y Filas | Basado en NovoSGA | Poliedro</title>
+  <meta name="description" content="Digiturno: sistema de gestión de turnos y filas basado en NovoSGA. Kiosco de tickets, pantalla de llamado, audio multilingüe y estadísticas en tiempo real. Ideal para gobierno, salud y banca.">
+  <meta name="keywords" content="sistema de turnos, gestión de filas, turnos digitales, Digiturno, NovoSGA, tickets de atención, pantalla de llamado, kiosco autoservicio, software turnos, turnos bancos, turnos EPS, turnos gobierno, Poliedro">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.poliedrocloud.com/digiturnos">
+  <meta property="og:title" content="Digiturno | Sistema de Gestión de Turnos | Poliedro">
+  <meta property="og:description" content="Elimina las filas físicas. Tickets, pantalla de llamado, audio y estadísticas en tiempo real.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.poliedrocloud.com/digiturnos">
+  <meta property="og:image" content="https://www.poliedrocloud.com/digiturnos/logo_poliedro.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digiturno | Turnos Digitales | Poliedro">
+  <meta name="twitter:description" content="Sistema de turnos digitales. Kiosco, pantalla TV, audio. Sin filas, sin estrés.">
+  <meta name="twitter:image" content="https://www.poliedrocloud.com/digiturnos/logo_poliedro.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Digiturno",
+    "operatingSystem": "Web, Linux",
+    "applicationCategory": "BusinessApplication",
+    "description": "Sistema de gestión de turnos y filas basado en NovoSGA. Kiosco de autoservicio, pantalla de llamado, audio multilingüe y estadísticas en tiempo real.",
+    "url": "https://www.poliedrocloud.com/digiturnos",
+    "offers": { "@type": "Offer", "priceCurrency": "COP", "availability": "https://schema.org/InStock" }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,11 +41,12 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#" class="nav-logo">
-        <img src="logo_poliedro.png" alt="Poliedro" class="nav-logo-img">
+        <img src="logo_poliedro.png" alt="Poliedro - Digiturno Gestión de Filas" class="nav-logo-img">
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#que-es" class="nav-link">¿Qué es?</a>
         <a href="#video" class="nav-link">Video</a>
+        <a href="#tutorial" class="nav-link">Tutorial</a>
         <a href="#flujo" class="nav-link">Flujo</a>
         <a href="#paneles" class="nav-link">Paneles</a>
         <a href="#componentes" class="nav-link">Componentes</a>
@@ -127,6 +152,23 @@
       <div class="video-container">
         <video controls poster="logo_poliedro.png" class="video-player">
           <source src="digiturno.mp4" type="video/mp4">
+          Tu navegador no soporta reproducción de video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO TUTORIAL -->
+  <section class="section" id="tutorial">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Tutorial completo</span>
+        <h2 class="section-title">Aprende a usar <span class="text-gradient">Digiturno paso a paso</span></h2>
+        <p class="section-subtitle">Desde la instalación del kiosco hasta la configuración de pantallas, servicios y reportes. Todo lo que necesitas para poner en marcha tu sistema de turnos.</p>
+      </div>
+      <div class="video-container">
+        <video controls poster="logo_poliedro.png" class="video-player">
+          <source src="digiturno-tutorial.mp4" type="video/mp4">
           Tu navegador no soporta reproducción de video.
         </video>
       </div>
@@ -795,21 +837,20 @@
   </a>
 
   <!-- FLOATING CHAT BUTTON -->
-  <button class="chat-float open-zammad-chat" aria-label="Abrir chat en vivo">
-    <div class="chat-float-avatar">
-      <svg viewBox="0 0 64 64" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="32" cy="22" r="12" fill="white" opacity="0.95"/>
-        <ellipse cx="32" cy="50" rx="18" ry="12" fill="white" opacity="0.95"/>
-        <rect x="20" y="23" width="24" height="2" rx="1" fill="#0072a1" opacity="0.3"/>
-        <path d="M32 1C31.2 1 30.5 1.6 30.5 2.5V10H24C22.9 10 22 10.9 22 12C22 13.1 22.9 14 24 14H30.5V21.5C30.5 22.3 31.2 23 32 23C32.8 23 33.5 22.3 33.5 21.5V14H40C41.1 14 42 13.1 42 12C42 10.9 41.1 10 40 10H33.5V2.5C33.5 1.6 32.8 1 32 1Z" fill="#0072a1"/>
-        <circle cx="32" cy="32" r="31" stroke="white" stroke-width="1.5" opacity="0.4"/>
-      </svg>
-    </div>
+  <a href="#" class="chat-float" aria-label="Abrir chat en vivo" style="position:fixed;bottom:152px;left:16px;z-index:9999;width:52px;height:52px;background:linear-gradient(135deg,#0072a1,#2d97bf);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.15);text-decoration:none;">
     <div class="chat-float-pulse"></div>
-    <span class="chat-float-label">Chat en vivo</span>
-  </button>
+    <svg viewBox="0 0 64 64" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:relative;z-index:2">
+      <circle cx="32" cy="22" r="12" fill="white" opacity="0.95"/>
+      <ellipse cx="32" cy="50" rx="18" ry="12" fill="white" opacity="0.95"/>
+      <rect x="20" y="23" width="24" height="2" rx="1" fill="#0072a1" opacity="0.3"/>
+      <path d="M32 1C31.2 1 30.5 1.6 30.5 2.5V10H24C22.9 10 22 10.9 22 12C22 13.1 22.9 14 24 14H30.5V21.5C30.5 22.3 31.2 23 32 23C32.8 23 33.5 22.3 33.5 21.5V14H40C41.1 14 42 13.1 42 12C42 10.9 41.1 10 40 10H33.5V2.5C33.5 1.6 32.8 1 32 1Z" fill="#0072a1"/>
+      <circle cx="32" cy="32" r="30" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    </svg>
+    <span class="chat-float-label" style="position:absolute;left:56px;background:#333;color:white;font-size:0.7rem;font-weight:500;padding:0.3rem 0.7rem;border-radius:4px;white-space:nowrap;opacity:0;transform:translateX(-6px);transition:all 0.25s ease;pointer-events:none">Chat en vivo</span>
+  </a>
 
   <script src="script.js"></script>
+  <script src="https://widget-v2.dapta.ai/agent.min.js?agentId=a74f486f-30a8-440e-a81b-ea40de612384"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script id="zammad_form_script" src="https://pqrs.poliedroauth.com/assets/form/form.js"></script>
   <script>
@@ -822,10 +863,19 @@
   </script>
   <script src="https://pqrs.poliedroauth.com/assets/chat/chat-no-jquery.min.js"></script>
   <script>
-  (function() {
-    var chat = new ZammadChat({ background: '#3eb5f0', fontSize: '12px', chatId: 1, show: false });
-    document.querySelector('.chat-float').addEventListener('click', function() { if (typeof chat.show === 'function') chat.show(); });
-  })();
+  var _zammadChat = null;
+  try { _zammadChat = new ZammadChat({ background: '#3eb5f0', fontSize: '12px', chatId: 1, show: false }); } catch(e) {}
+  var _chatBtn = document.querySelector('.chat-float');
+  if (_chatBtn) {
+    _chatBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (_zammadChat && typeof _zammadChat.show === 'function') {
+        _zammadChat.show();
+      } else {
+        window.open('https://wa.me/573229881297', '_blank');
+      }
+    });
+  }
   </script>
 </body>
 </html>
